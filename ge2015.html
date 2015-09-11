@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>新加坡 2015 年全国大选开票夜直播</title>
+</head>
+<body bgcolor="#000000">
+<video id=example-video width=640 height=360 class="video-js vjs-default-skin" controls>
+<source src="http://d1g7sccev8onz8.cloudfront.net/dvrcf/smil:87ch8.smil/chunklist_b800000.m3u8" type="application/x-mpegURL">
+</video>
+<script src="node_modules/video.js/dist/video-js/video.dev.js"></script>
+<script src="node_modules/videojs-contrib-media-sources/src/videojs-media-sources.js"></script>
+<script src="https://github.com/videojs/videojs-contrib-hls/releases/download/v0.17.1/videojs.hls.min.js"></script>
+<script>
+var player = videojs('example-video');
+player.play();
+</script>
+</body>
+</html>
