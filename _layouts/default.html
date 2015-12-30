@@ -16,23 +16,13 @@
         <header>
             <h1 class="logo" id="blog-title"><a href="{{site.url}}">{{ site.title }}</a></h1>
             <ul class="navigation">
-                <li><a href="{{site.url}}/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">存档 Archive</a></li>
+                <li><a href="{{site.url}}/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %}>计划项目 Projects</a></li>
+                <li><a href="{{site.url}}/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %}>帖子存档 Archived posts</a></li>
                 <li><a href="{{site.url}}/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>关于我 About me</a></li>
             </ul>
         </header>
 
         {{ content }}
-
-        {% if paginator.page %}
-        <div id="paginator" class="content">
-            {% if paginator.next_page %}
-            <a href="{{site.url}}/page{{ paginator.next_page }}/">Older entries</a>
-            {% endif %}
-            {% if paginator.previous_page %}
-            <a href="{{site.url}}/page{{ paginator.previous_page }}/">Newer entries</a>
-            {% endif %}
-        </div>
-        {% endif %}
 
         {% unless page.no_footer %}
         <footer>
