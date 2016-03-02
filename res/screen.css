@@ -265,6 +265,7 @@ a.post-excerpt {
 a.post-excerpt div.padded-content {
     display: block;
     padding: 40px;
+    line-height: 1.5;
 }
 a.post-excerpt div.grid-mask {
     display: none;
