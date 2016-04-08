@@ -1,0 +1,39 @@
+body
+{
+    background: #9DB7D2;
+    background: -webkit-linear-gradient(to left, #9DB7D2, #004E98);
+    background: linear-gradient(to left, #9DB7D2, #004E98);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15pt;
+}
+td.osname
+{
+    background-color: #808080;
+    color: #FFFFFF;
+}
+td.eosdate
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    width: 80px;
+}
+td.date
+{
+    width: 150px;
+}
+td.eos
+{
+    background-color: #C0C0C0;
+    text-align: center;
+}
+p
+{
+    color: #FFFFFF;
+    font-size: 11pt;
+}
+p a:link, p a:visited, p a:hover, p a:active
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
