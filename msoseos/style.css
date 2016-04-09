@@ -6,6 +6,34 @@ body
     font-family: 'Segoe UI', sans-serif;
     font-size: 15pt;
 }
+table
+{
+    width: 100%;
+}
+@media screen and (min-width: 1007px) {
+    table
+    {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1263px) {
+    table
+    {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1903px) {
+    body
+    {
+        zoom: 1.25;
+    }
+}
+@media screen and (min-width: 3823px) {
+    body
+    {
+        zoom: 2.5;
+    }
+}
 td.osname
 {
     background-color: #808080;
@@ -16,7 +44,7 @@ td.eosdate
     background-color: #000000;
     color: #FFFFFF;
     text-align: center;
-    width: 80px;
+    width: 85px;
 }
 td.date
 {
