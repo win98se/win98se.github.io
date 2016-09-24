@@ -1,0 +1,24 @@
+h1
+{
+    font-family: 'KaiTi', 'KaiTi_GB2312', serif;
+    font-weight: normal;
+    text-align: center;
+}
+p
+{
+    font-family: 'Times New Roman', 'SimSun', serif;
+}
+a
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+.footer
+{
+    font-weight: bold;
+}
+.note
+{
+    font-style: italic;
+    text-align: center;
+}
