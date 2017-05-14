@@ -18,14 +18,14 @@ WannaCrypt，又称 WannaCry，不久前发现了变种，也就是 2.0 版。
 <style>
 table
 {
-    background-color: #f7f7f7;
+    background-color: #efefef;
     border-collapse: collapse;
     width: 100%;
 }
 th, td
 {
     border: 2px solid #ffffff;
-    padding: 5px;
+    padding: 10px;
 }
 </style>
 <table>
