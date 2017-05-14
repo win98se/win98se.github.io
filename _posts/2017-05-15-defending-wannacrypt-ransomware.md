@@ -153,24 +153,24 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 2. 输入以下命令，接着回车并确认操作：
 
-    Set-SmbServerConfiguration -EnableSMB1Protocol $false
+    `Set-SmbServerConfiguration -EnableSMB1Protocol $false`
 
 3. 为确保 SMBv1 服务器端已经禁用，运行以下命令：
 
-    Get-SmbServerConfiguration | Select EnableSMB1Protocol
+    `Get-SmbServerConfiguration | Select EnableSMB1Protocol`
 
 4. 若你看到 `EnableSMB1Protocol` 为 `False`，表示上述操作成功，继续接下来的步骤。
 
 5. 运行这两个命令：
 
-    sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi
-    sc.exe config mrxsmb10 start= disabled
+    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`
+    `sc.exe config mrxsmb10 start= disabled`
 
 6. 如果你是 Windows 8.0 用户，到这里重启 Windows，结束；否则继续操作。
 
 7. 运行以下命令：
 
-    Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
+    `Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol`
 
 8. 提示重启 Windows 时，确认操作，重启后，SMBv1 就完全禁用。
 
@@ -184,8 +184,8 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 4. 运行这两个命令：
 
-    sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi
-    sc.exe config mrxsmb10 start= disabled
+    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`
+    `sc.exe config mrxsmb10 start= disabled`
 
 5. 重启 Windows。
 
