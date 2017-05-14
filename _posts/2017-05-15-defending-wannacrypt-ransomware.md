@@ -163,7 +163,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 5. 运行这两个命令：
 
-    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`
+    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`  
     `sc.exe config mrxsmb10 start= disabled`
 
 6. 如果你是 Windows 8.0 用户，到这里重启 Windows，结束；否则继续操作。
@@ -184,7 +184,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 4. 运行这两个命令：
 
-    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`
+    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`  
     `sc.exe config mrxsmb10 start= disabled`
 
 5. 重启 Windows。
