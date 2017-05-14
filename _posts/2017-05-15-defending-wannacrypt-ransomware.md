@@ -15,7 +15,20 @@ WannaCrypt，又称 WannaCry，不久前发现了变种，也就是 2.0 版。
 
 近期它更是大费周章，让 Windows XP、Windows Server 2003 和 Windows 8.0 这三个已经完全结束支持的操作系统“复活”，可见这个威胁不容小觑。
 
-<table width="100%" bgcolor="#f7f7f7" bordercolor="#ffffff">
+<style>
+table
+{
+    background-color: #f7f7f7;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td
+{
+    border: 2px solid #ffffff;
+    padding: 5px;
+}
+</style>
+<table>
 <tr>
 <th>操作系统</th>
 <th>架构</th>
