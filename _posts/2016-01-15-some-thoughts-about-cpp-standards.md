@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 对于 C++ 标准的愚见
 date: 2016-01-15 03:49:00
@@ -40,7 +40,7 @@ C 的是在 `stdio.h`，而 C++ 的，原本是在 `iostream.h`，我也不懂�
 旧版的 C++ 源程序范例：
 
     #include <iostream.h>
-
+    
     void main()
     {
         cout<<"GFYP.";
@@ -49,9 +49,9 @@ C 的是在 `stdio.h`，而 C++ 的，原本是在 `iostream.h`，我也不懂�
 新版的 C++ 源程序范例：
 
     #include <iostream>
-
+    
     using namespace std;
-
+    
     int main()
     {
         cout<<"GFYP.";
