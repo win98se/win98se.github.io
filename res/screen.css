@@ -756,3 +756,14 @@ html.ios #cse-search-field {
 html.ios #cse-search-button {
     display: none;
 }
+table {
+    background-color: #efefef;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    vertical-align: top;
+}

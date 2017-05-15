@@ -15,19 +15,6 @@ WannaCrypt，又称 WannaCry，不久前发现了变种，也就是 2.0 版。
 
 近期它更是大费周章，让 Windows XP、Windows Server 2003 和 Windows 8.0 这三个已经完全结束支持的操作系统“复活”，可见这个威胁不容小觑。
 
-<style>
-table
-{
-    background-color: #efefef;
-    border-collapse: collapse;
-    width: 100%;
-}
-th, td
-{
-    border: 2px solid #ffffff;
-    padding: 5px;
-}
-</style>
 <table>
 <tr>
 <th>操作系统</th>
@@ -160,7 +147,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 未来不排除变种还是可以通过一个漏洞来入侵，所以我们要尽可能将其关闭。这个漏洞，就是已经过时的 SMBv1。
 
-### Windows 8.0/8.1/10
+##### Windows 8.x/10
 
 1. 用管理员权限打开 PowerShell。
 
@@ -187,7 +174,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 8. 提示重启 Windows 时，确认操作，重启后，SMBv1 就完全禁用。
 
-### Windows Vista/7
+##### Windows Vista/7
 
 1. 打开注册表编辑器，然后打开 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters 目录。
 
@@ -202,6 +189,15 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 5. 重启 Windows。
 
+---
+
 所以基本防范完成了，与此同时，请务必更新和升级杀毒软件及防火墙，以有效防御这个恶意软件。
 
+为了保证你在安全的最前线，也[建议你升级到最新的 Windows 10](https://www.facebook.com/Nawzil/posts/1331245190302825)。
+
 往后技术文章会陆续有来，敬请期待。
+
+##### 参考
+
+* [Customer Guidance for WannaCrypt attacks](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/)
+* [How to enable and disable SMBv1, SMBv2, and SMBv3 in Windows and Windows Server](https://support.microsoft.com/en-us/help/2696547)
