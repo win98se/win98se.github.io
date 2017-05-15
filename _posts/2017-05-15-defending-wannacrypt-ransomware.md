@@ -147,7 +147,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 未来不排除变种还是可以通过一个漏洞来入侵，所以我们要尽可能将其关闭。这个漏洞，就是已经过时的 SMBv1。
 
-##### Windows 8.x/10
+### Windows 8.x/10
 
 1. 用管理员权限打开 PowerShell。
 
@@ -174,7 +174,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 8. 提示重启 Windows 时，确认操作，重启后，SMBv1 就完全禁用。
 
-##### Windows Vista/7
+### Windows Vista/7
 
 1. 打开注册表编辑器，然后打开 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters 目录。
 
@@ -197,7 +197,7 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 往后技术文章会陆续有来，敬请期待。
 
-##### 参考
+### 参考
 
 * [Customer Guidance for WannaCrypt attacks](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/)
 * [How to enable and disable SMBv1, SMBv2, and SMBv3 in Windows and Windows Server](https://support.microsoft.com/en-us/help/2696547)
