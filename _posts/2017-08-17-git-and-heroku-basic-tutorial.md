@@ -245,6 +245,7 @@ composer.json 的内容是这样的：
 * Composer 英文文档 - <https://getcomposer.org/doc>
 * Composer 中文文档 - <http://docs.phpcomposer.com>
 
+其实这篇教程去年 10 月底就开始写了 (也就是说，这个工作坊也是同一个时候的)，到现在才写完…………这期间真的是又忙又累，还有很多该做的东西没做，都堆积如山了呢。
 
 嗯，差不多就是酱。
 
