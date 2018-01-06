@@ -5,7 +5,7 @@ date: 2018-01-06 15:21:00
 ---
 最近爆出 Spectre 和 Meltdown 处理器漏洞，基本上，大家手上的所有电脑和手机都会中招，无一幸免。
 
-这里来说 Windows、Debian 和 Ubuntu 的解决方法，其它系统会由各自硬件或软件公司推出对应的修复。
+这里来说 Windows、Debian 和 Ubuntu 的解决方法，其它系统的相应补丁会由各自的软件公司 和/或 硬件厂商推出。
 
 注意：安装这里的安全补丁可能导致性能骤降高达 30%，在 Intel 第 6 代或以上的处理器系统，性能降低不会太明显。
 
@@ -174,4 +174,4 @@ Ubuntu 官方尚未修复这两个漏洞。
 
 ### 参考
 
-* [伯谅 LCw 专页新闻](https://www.facebook.com/win98selcwpage/posts/1530150040367394)
+* [伯谅 LCw 面簿专页新闻](https://www.facebook.com/win98selcwpage/posts/1530150040367394)
