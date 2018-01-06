@@ -3,8 +3,6 @@ layout: post
 title: 防御 Spectre 和 Meltdown 处理器漏洞
 date: 2018-01-06 15:21:00
 ---
-各位。
-
 最近爆出 Spectre 和 Meltdown 处理器漏洞，基本上，大家手上的所有电脑和手机都会中招，无一幸免。
 
 这里来说 Windows、Debian 和 Ubuntu 的解决方法，其它系统会由各自硬件或软件公司推出对应的修复。
@@ -161,8 +159,8 @@ Debian 官方目前已经修复 Meltdown 漏洞，Spectre 漏洞尚未修复。
 
 请进行系统更新 (若当前用户非 `root`，请在每一行命令之前加上 `sudo` 指令)：
 
-    `apt update`  
-    `apt upgrade`
+    apt update
+    apt upgrade
 
 并重新启动。
 
