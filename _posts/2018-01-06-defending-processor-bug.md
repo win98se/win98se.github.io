@@ -11,6 +11,10 @@ date: 2018-01-06 15:21:00
 
 ### Windows 电脑版
 
+建议通过 Windows Update 进行升级；以下更新文件供离线安装用途。
+
+经过测试，安装下列补丁后的系统 (Windows 10 版本 1607，制版号 14393.2007；Windows 10 版本 1703，制版号 15063.850；Windows 10 版本 1709，制版号 16299.192) 尚未修复 Spectre 漏洞。
+
 <table>
 <tr>
 <th>操作系统</th>
@@ -32,12 +36,12 @@ date: 2018-01-06 15:21:00
 <tr>
 <td rowspan="2">Windows 8.1</td>
 <td>x86</td>
-<td>当前不可用</td>
+<td>累积更新当前不可用</td>
 <td>当前不可用</td>
 </tr>
 <tr>
 <td>x64</td>
-<td>当前不可用</td>
+<td>累积更新当前不可用</td>
 <td>当前不可用</td>
 </tr>
 <tr>
@@ -134,10 +138,12 @@ date: 2018-01-06 15:21:00
 
 仅能通过 Windows Update 进行升级。
 
+下列补丁也可能尚未修复 Spectre 漏洞。
+
 <table>
 <tr>
 <th>版本 (制版号)</th>
-<th>链接</th>
+<th>说明网页链接</th>
 </tr>
 <tr>
 <td>版本 1607 (制版号 14393.2007)</td>
@@ -166,12 +172,29 @@ Debian 官方目前已经修复 Meltdown 漏洞，Spectre 漏洞尚未修复。
 
 ### Ubuntu
 
-Ubuntu 官方尚未修复这两个漏洞。
+Ubuntu 官方已经推出测试版补丁，着重于修复 Meltdown 漏洞；修复 Spectre 漏洞会在下一轮进行。
+
+若想测试该补丁，请运行以下命令 (若当前用户非 `root`，请在每一行命令之前加上 `sudo` 指令)：
+
+    add-apt-repository ppa:canonical-kernel-team/pti
+
+随后，进行系统更新 (若当前用户非 `root`，请在每一行命令之前加上 `sudo` 指令)：
+
+    apt update
+    apt upgrade
+
+并重新启动。
+
+若想等待稳定版补丁，请再等待。
 
 ---
 
 该文章会根据改动，做出相应更新。
 
+P/S: 我不隶属于 Windows、Debian 或 Ubuntu 任一安全组，仅收集各方消息后进行整理。
+
 ### 参考
 
 * [伯谅 LCw 面簿专页新闻](https://www.facebook.com/win98selcwpage/posts/1530150040367394)
+* [Spectre 攻击演示](https://github.com/Pl4gue/spectre-attack-demo)
+* [Ubuntu 官网说明网页](https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown)
