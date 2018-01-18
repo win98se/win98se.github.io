@@ -3,9 +3,6 @@ layout: post
 title: 防御 Spectre 和 Meltdown 处理器漏洞
 date: 2018-01-06 15:21:00
 ---
-版本：6    
-最后更新：18/01/2018
-
 最近爆出 Spectre 和 Meltdown 处理器漏洞，基本上，大家手上的所有电脑和手机都会中招，无一幸免；但是 [Raspberry Pi 是免疫的](https://www.raspberrypi.org/blog/why-raspberry-pi-isnt-vulnerable-to-spectre-or-meltdown/)哦，啾咪。
 
 详情可以看[这里](https://www.infoq.com/news/2018/01/meltdown-spectre-deep-dive)。
@@ -63,7 +60,7 @@ date: 2018-01-06 15:21:00
 <td>307.48 MB</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 电脑版 (版本 1507)</td>
+<td rowspan="2">Windows 10 (版本 1507)</td>
 <td>x86</td>
 <td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056893-x86_b2a28dc6845c85fd32dcd511e3f73f82e46d355f.msu">下载累积更新 (03/01/2018)</a></td>
 <td>480.29 MB</td>
@@ -74,7 +71,7 @@ date: 2018-01-06 15:21:00
 <td>894.75 GB</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 电脑版 (版本 1511)</td>
+<td rowspan="2">Windows 10 (版本 1511)</td>
 <td>x86</td>
 <td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056888-x86_0493b29664aec0bfe7b934479afb45fe83c59cbe.msu">下载累积更新 (03/01/2018)</a></td>
 <td>535.96 MB</td>
@@ -85,7 +82,7 @@ date: 2018-01-06 15:21:00
 <td>916.52 MB</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 电脑版 (版本 1607)</td>
+<td rowspan="2">Windows 10 (版本 1607)</td>
 <td>x86</td>
 <td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/01/windows10.0-kb4057142-x86_431d123099d6f8d3bd06802950ab4899640a6bb6.msu">下载累积更新 (17/01/2018)</a></td>
 <td>632.21 MB</td>
@@ -102,7 +99,7 @@ date: 2018-01-06 15:21:00
 <td>不可用</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 电脑版 (版本 1703)</td>
+<td rowspan="2">Windows 10 (版本 1703)</td>
 <td>x86</td>
 <td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/01/windows10.0-kb4057144-x86_29f31e7a92f7f1c971418d44989331374d98c02c.msu">下载累积更新 (17/01/2018)</a></td>
 <td>596.17 MB</td>
@@ -119,7 +116,7 @@ date: 2018-01-06 15:21:00
 <td>不可用</td>
 </tr>
 <tr>
-<td rowspan="5">Windows 10 电脑版 (版本 1709)</td>
+<td rowspan="5">Windows 10 (版本 1709)</td>
 <td rowspan="2">x86</td>
 <td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-x86_d3aaf1048d6f314240b8c6fe27932aa52a5e6733.msu">下载累积更新 (03/01/2018)</a></td>
 <td>329.43 MB</td>
@@ -172,3 +169,7 @@ P/S: 我不代表或隶属于 Windows、Debian 或 Ubuntu 任一安全组，仅�
 * [伯谅 LCw 面簿专页新闻](https://www.facebook.com/win98selcwpage/posts/1530150040367394)
 * [Spectre 攻击演示](https://github.com/Pl4gue/spectre-attack-demo)
 * [Ubuntu 官网说明网页](https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown)
+
+版本：7
+
+最后更新：18/01/2018
