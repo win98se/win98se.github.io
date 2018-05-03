@@ -1,0 +1,63 @@
+*
+{
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+}
+h1, h2
+{
+    color: #0078d7;
+    font-weight: 300;
+    margin: 15px 0;
+}
+h1
+{
+    font-size: 33px;
+}
+h2
+{
+    font-size: 23px;
+}
+select
+{
+    font-size: 14px;
+    width: 384px;
+}
+button, .button-purple
+{
+    background: #0078d7;
+    border: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 24px;
+    text-decoration: none;
+}
+button:hover, .button-purple:hover
+{
+    background: #002050;
+    border-bottom: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+.input-error-message
+{
+    display: none;
+}
+a
+{
+    color: #0078d7;
+    text-decoration: none;
+}
+a:hover
+{
+    border-bottom: 1px solid #002050;
+    color: #002050;
+}
+.span.bp0-col-1-1.bp1-col-1-1.bp2-col-1-1.bp3-col-1-1
+{
+    margin: 20px 0;
+}
+#faq
+{
+    margin-left: 20px;
+}
