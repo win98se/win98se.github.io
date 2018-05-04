@@ -17,8 +17,6 @@ date: 2018-01-06 15:21:00
 
 移动版仅能通过 Windows Update 进行升级。
 
-经过测试，安装下列补丁后的系统尚未修复 Spectre 漏洞。
-
 <table>
 <tr>
 <th>操作系统</th>
@@ -29,127 +27,160 @@ date: 2018-01-06 15:21:00
 <tr>
 <td rowspan="2">Windows 7</td>
 <td>x86</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows6.1-kb4056894-x86_c4ea3ab351b1edb45c0977e0e2e4607b17eeaba7.msu">下载累积更新 (04/01/2018)</a></td>
-<td>135.76 MB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows6.1-kb4093113-x86_72c9cf4bb3cf668ad1efdfa24c129f455f678aad.msu">下载预览累积更新 (23/04/2018)</a></td>
+<td>130.54 MB</td>
 </tr>
 <tr>
 <td>x64</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows6.1-kb4056894-x64_4ddb21dbf40b3a7c41e17b4bf04242d8b48a5ac3.msu">下载累积更新 (04/01/2018)</a></td>
-<td>231.1 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows6.1-kb4093113-x64_ab0588663c236e5a1d8935fd9d3ca9fac1fa7ac9.msu">下载预览累积更新 (23/04/2018)</a></td>
+<td>218.76 MB</td>
 </tr>
 <tr>
 <td rowspan="2">Windows 8.0</td>
 <td>x86</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows8-rt-kb4057402-x86_46120f31a158f1ecda48f454f87d7cc16a0dea5f.msu">下载预览累积更新 (17/01/2018)</a></td>
-<td>117.14 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows8-rt-kb4093116-x86_b70ca33134dc51f3bef88623a7e0f174bc881c86.msu">下载预览累积更新 (16/04/2018)</a></td>
+<td>124.2 MB</td>
 </tr>
 <tr>
 <td>x64</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows8-rt-kb4057402-x64_e007e9a6470b5ddda2dc1cc427155fd0f6e14c67.msu">下载预览累积更新 (17/01/2018)</a></td>
-<td>186.63 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows8-rt-kb4093116-x64_c5dd665413a87d03c58038d8c2428cc15095f8c1.msu">下载预览累积更新 (16/04/2018)</a></td>
+<td>199.78 MB</td>
 </tr>
 <tr>
 <td rowspan="2">Windows 8.1</td>
 <td>x86</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows8.1-kb4057401-x86_aef2450759323ea59bbf903706acb08e229cdaa4.msu">下载预览累积更新 (17/01/2018)</a></td>
-<td>169.83 MB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows8.1-kb4093121-x86_249d3d5ff37376b9419ece3566e61fe42e33bff2.msu">下载预览累积更新 (13/04/2018)</a></td>
+<td>181.02 MB</td>
 </tr>
 <tr>
 <td>x64</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows8.1-kb4057401-x64_8d29b472be5466788675ee257355773a4fb4cbff.msu">下载预览累积更新 (17/01/2018)</a></td>
-<td>307.48 MB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows8.1-kb4093121-x64_4e8483bcb4ad56a5b63959af8c3fc0dba9f93d48.msu">下载预览累积更新 (13/04/2018)</a></td>
+<td>328.76 MB</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 版本 1507</td>
-<td>x86</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056893-x86_b2a28dc6845c85fd32dcd511e3f73f82e46d355f.msu">下载累积更新 (03/01/2018)</a></td>
-<td>480.29 MB</td>
+<td rowspan="4">Windows 10 版本 1507</td>
+<td rowspan="2">x86</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/03/windows10.0-kb4093111-x86_a56930ba6dd1a1c575184f193740d44b0fcb2e9c.msu">下载累积更新 (07/04/2018)</a></td>
+<td>484.62 MB</td>
 </tr>
 <tr>
-<td>x64</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056893-x64_d2873bb43413d31871ccb8fea213a96a714a6f87.msu">下载累积更新 (03/01/2018)</a></td>
-<td>894.75 GB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/crup/2018/03/windows10.0-kb4091666-x86_b9760edb4c566a16d23102ad5a070b660ecb90a3.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>975.17 KB</td>
+</tr>
+<tr>
+<td rowspan="2">x64</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/03/windows10.0-kb4093111-x64_4dddf49fcd4d0f2023aec04e2fe76415bc957ebf.msu">下载累积更新 (07/04/2018)</a></td>
+<td>901.1 MB</td>
+</tr>
+<tr>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/crup/2018/03/windows10.0-kb4091666-x64_cc926ca5f1cad7f257f06f8fadf4f6d5e8a41142.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>961.84 KB</td>
 </tr>
 <tr>
 <td rowspan="2">Windows 10 版本 1511</td>
 <td>x86</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056888-x86_0493b29664aec0bfe7b934479afb45fe83c59cbe.msu">下载累积更新 (03/01/2018)</a></td>
-<td>535.96 MB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/03/windows10.0-kb4093109-x86_deb386b092c264b58b17961ad359f1dd8ae6c793.msu">下载累积更新 (07/04/2018)</a></td>
+<td>519.72 MB</td>
 </tr>
 <tr>
 <td>x64</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056888-x64_4477b9725a819afd8abc3e5b1f6302361005908d.msu">下载累积更新 (03/01/2018)</a></td>
-<td>916.52 MB</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/03/windows10.0-kb4093109-x64_23878b35ac2f25483092cd28fb75b5c75b5d4ae1.msu">下载累积更新 (07/04/2018)</a></td>
+<td>919.85 MB</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 版本 1607</td>
-<td>x86</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/01/windows10.0-kb4057142-x86_431d123099d6f8d3bd06802950ab4899640a6bb6.msu">下载累积更新 (17/01/2018)</a></td>
-<td>632.21 MB</td>
+<td rowspan="4">Windows 10 版本 1607</td>
+<td rowspan="2">x86</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows10.0-kb4093120-x86_444f087a3f42e7b5c13ffafd5eace2df0d21be8a.msu">下载累积更新 (17/04/2018)</a></td>
+<td>650.15 MB</td>
 </tr>
 <tr>
-<td>x64</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/01/windows10.0-kb4057142-x64_0a8e8c498fbfa742048e911fa9c20bb33844c4c4.msu">下载累积更新 (17/01/2018)</a></td>
-<td>1.17 GB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4091664-v2-x86_ebc7f6f66aae9f36f34a726c01a80bf10059c955.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.2 MB</td>
+</tr>
+<tr>
+<td rowspan="2">x64</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows10.0-kb4093120-x64_72c7d6ce20eb42c0df760cd13a917bbc1e57c0b7.msu">下载累积更新 (17/04/2018)</a></td>
+<td>1.2 GB</td>
+</tr>
+<tr>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4091664-v2-x64_d66063ae7693e8212120aec056917f6d7c54ca41.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.18 MB</td>
 </tr>
 <tr>
 <td>Windows 10 移动版<br>版本 1607</td>
 <td>ARM</td>
-<td><a href="https://support.microsoft.com/help/4056890">累积更新说明网页 (05/01/2018)</a></td>
+<td><a href="https://support.microsoft.com/help/4093119">累积更新说明网页 (10/04/2018)</a></td>
 <td>不可用</td>
 </tr>
 <tr>
-<td rowspan="2">Windows 10 版本 1703</td>
-<td>x86</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/01/windows10.0-kb4057144-x86_29f31e7a92f7f1c971418d44989331374d98c02c.msu">下载累积更新 (17/01/2018)</a></td>
-<td>596.17 MB</td>
+<td rowspan="4">Windows 10 版本 1703</td>
+<td rowspan="2">x86</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows10.0-kb4093117-x86_c7ccadf3107f9210f49d9605c0c34bf1a2530ac3.msu">下载累积更新 (16/04/2018)</a></td>
+<td>634.73 MB</td>
 </tr>
 <tr>
-<td>x64</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows10.0-kb4057144-x64_7d8b395bfe62bd9961489763c15ba097ff296432.msu">下载累积更新 (17/01/2018)</a></td>
-<td>1 GB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4091663-v2-x86_be946e4a37f4019bc6908cd1ce2b6a6a4693fea3.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.2 MB</td>
+</tr>
+<tr>
+<td rowspan="2">x64</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows10.0-kb4093117-x64_e91aa7f9c9af0ab25cc98787d5e3244b0e292f59.msu">下载累积更新 (16/04/2018)</a></td>
+<td>1.06 GB</td>
+</tr>
+<tr>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4091663-v2-x64_a7a24a577ceef86a1cbd35dec80f1509773b4a0b.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.18 MB</td>
 </tr>
 <tr>
 <td>Windows 10 移动版<br>版本 1703</td>
 <td>ARM</td>
-<td><a href="https://support.microsoft.com/help/4056891">累积更新说明网页 (05/01/2018)</a></td>
+<td><a href="https://support.microsoft.com/help/4093107">累积更新说明网页 (10/04/2018)</a></td>
 <td>不可用</td>
 </tr>
 <tr>
 <td rowspan="5">Windows 10 版本 1709</td>
 <td rowspan="2">x86</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-x86_d3aaf1048d6f314240b8c6fe27932aa52a5e6733.msu">下载累积更新 (03/01/2018)</a></td>
-<td>329.43 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows10.0-kb4093105-x86_cef5097297464049c0043fec31b1fed4d5715dfe.msu">下载累积更新 (23/04/2018)</a></td>
+<td>416.69 MB</td>
 </tr>
 <tr>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-x86_delta_45f3a157eb4b4ced11044f6c462f21ec74287cb5.msu">下载 Delta 更新 (03/01/2018)</a></td>
-<td>152.08 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4090007-v2-x86_d69060312f689ceb5d5a93eb931d080123be9255.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.19 MB</td>
 </tr>
 <tr>
-<td>x64</td>
-<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/01/windows10.0-kb4073290-x64_5119daced3c80d539e79cf52a5fb5bc9cea61eb8.msu">下载累积更新 (17/01/2018)</a></td>
-<td>602.85 MB</td>
+<td rowspan="2">x64</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/04/windows10.0-kb4093105-x64_34cd83487c317ce53f547e3e4848ec0f22cb7b14.msu">下载累积更新 (23/04/2018)</a></td>
+<td>760.56 MB</td>
 </tr>
 <tr>
-<td rowspan="2">ARM64</td>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-arm64_028810421e6036f439add546e189219649140f4b.msu">下载累积更新 (03/01/2018)</a></td>
-<td>566.95 MB</td>
+<td><a href="http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/03/windows10.0-kb4090007-v2-x64_c1c938143bce4d0939b9cbe3a19d0e4f9ef6d896.msu">下载 Intel 处理器微代码更新 (24/04/2018)</a></td>
+<td>1.18 MB</td>
 </tr>
 <tr>
-<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-arm64_delta_201d66e2a6863a9705c84527b44f159cbbb84224.msu">下载 Delta 更新 (03/01/2018)</a></td>
-<td>354.78 MB</td>
+<td>ARM64</td>
+<td><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/04/windows10.0-kb4093105-arm64_b28514cee2ec8e7c6105f7edf98047f9171da912.msu">下载累积更新 (23/04/2018)</a></td>
+<td>767.1 MB</td>
 </tr>
 <tr>
 <td>Windows 10 移动版<br>版本 1709</td>
 <td>ARM</td>
-<td><a href="https://support.microsoft.com/help/4073117">累积更新说明网页 (05/01/2018)</a></td>
+<td><a href="https://support.microsoft.com/help/4099572">累积更新说明网页 (10/04/2018)</a></td>
 <td>不可用</td>
 </tr>
 </table>
 
+最新的 Windows 10 版本 1803 预计默认防范这两个漏洞。
+
+除了以上这些，也建议所有 Windows 10 用户下载并运行<a href="http://download.windowsupdate.com/d/msdownload/update/software/crup/2018/04/kb4078407_34d9cffcab2d46044e625484085ca7c6c3888396.exe">该程序</a> (24.63 KB)，以完全启用漏洞修复措施。
+
+更新完成后，可以下载并运行<a href="https://www.grc.com/files/InSpectre.exe">该程序</a> (125.14 KB)，确认漏洞已被修复。
+
 ### Debian 和 Ubuntu
 
-Debian 和 Ubuntu 官方目前已经修复 Meltdown 漏洞，Spectre 漏洞尚未修复。
+Debian 和 Ubuntu 官方目前已经将两个漏洞都修复，但是：
+
+* 其中 Spectre 漏洞需要更新后的韧件或微代码 (以 Intel 处理器而言，微代码的软件包为 `intel-microcode`) 才能完全修复；
+* 这两个发行版的 i386 版本都没有修复 Meltdown 漏洞，两者的开发公司都已表示，建议用户转为使用 64 位内核。
 
 请进行系统更新 (若当前用户非 `root`，请在每一行命令之前加上 `sudo` 指令)：
 
@@ -157,6 +188,8 @@ Debian 和 Ubuntu 官方目前已经修复 Meltdown 漏洞，Spectre 漏洞尚�
     apt upgrade
 
 并重新启动。
+
+更新完成后，可以安装 `spectre-meltdown-checker` 软件包，并运行 `spectre-meltdown-checker`，确认漏洞已被修复。
 
 ---
 
@@ -167,8 +200,12 @@ P/S: 我不代表或隶属于 Windows、Debian 或 Ubuntu 任一安全组，仅�
 ### 参考
 
 * [伯谅 LCw 面簿专页新闻](https://www.facebook.com/win98selcwpage/posts/1530150040367394)
-* [Spectre 攻击演示](https://github.com/Pl4gue/spectre-attack-demo)
+* [微软安全公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)
+* [Windows 官网说明网页](https://support.microsoft.com/en-us/help/4073757)
+* [Debian 官网说明网页](https://wiki.debian.org/DebianSecurity/SpectreMeltdown)
 * [Ubuntu 官网说明网页](https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown)
+* [InSpectre](https://www.grc.com/inspectre.htm)
+* [Spectre &amp; Meltdown Checker](https://github.com/speed47/spectre-meltdown-checker)
 
-版本：9    
-最后更新：18/01/2018
+版本：10    
+最后更新：04/05/2018
