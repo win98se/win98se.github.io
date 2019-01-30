@@ -218,7 +218,7 @@ div.content ul > li {
 div.content blockquote {
     font-style: italic;
     line-height: 1.618;
-    background: transparent url(quotation-mark.png) no-repeat scroll 25px 1.4em;
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBQzUxQkVENDkyNjUxMUUxQjlBREE3QTJENUYzQzYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBQzUxQkVENTkyNjUxMUUxQjlBREE3QTJENUYzQzYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFDNTFCRUQyOTI2NTExRTFCOUFEQTdBMkQ1RjNDNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFDNTFCRUQzOTI2NTExRTFCOUFEQTdBMkQ1RjNDNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hO5GxgAAAKNJREFUeNqEktsKAjEMRNdsveCDl0f///cEWVDwujiRQWK3EwNDSnqStGn7rm17aAHdOm0fplTBJbSDDLqKxB9mFjbW0BZ6QYPoPmFKqOobD+iYdJ4wRu9HGpNkyXiBDf05SZaMB1dcX5ICkvEhHqrYyBcYQkwypdHNOG33J3GiL2OspqYeOzYZ47P8M8lk048fSTI9f9UTmnOobvfq/pJ5CzAADH4sD3JhugwAAAAASUVORK5CYII=') no-repeat scroll 25px 1.4em;
     padding: 0.1em 1em 0.1em 60px;
     margin: 1.618em 0 1.618em -60px;
     color: #666055;
@@ -766,4 +766,8 @@ td {
     border: 2px solid #ffffff;
     padding: 5px;
     vertical-align: top;
+}
+a.external:after {
+    content: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22%3E%3Cpath fill=%22%23fff%22 stroke=%22%2336c%22 d=%22M1.5 4.518h5.982V10.5H1.5z%22/%3E%3Cpath fill=%22%2336c%22 d=%22M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z%22/%3E%3C/svg%3E');
+    margin-left: 1px;
 }
