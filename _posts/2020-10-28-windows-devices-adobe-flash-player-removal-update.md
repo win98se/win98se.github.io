@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Windows 设备 Adobe Flash Player 移除更新
-date: 2020-10-28 09:45:00
+date: 2020-10-28 09:45:00 +0800
+description: 用户安装更新后，Windows 自带的 Flash 将被永久删除。
+zh_only: true
 ---
 微软于当地时间 2020 年 10 月 27 日发布一个更新，用户安装该更新后，Windows 设备自带的 Adobe Flash Player 组件将被永久删除，这项操作不可回退。
 
@@ -84,5 +86,5 @@ Adobe 和其它厂商于 2017 年宣布，将于 2020 年 12 月 31 日完全结
 * [伯谅 LCw 面簿专页新闻](https://www.facebook.com/win98selcwpage/posts/3365279113521135)
 * [微软官网说明网页](https://support.microsoft.com/en-us/help/4577586)
 
-版本：2    
-最后更新：28/10/2020
+版本：3<br>
+最后更新：05/12/2020

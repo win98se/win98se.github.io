@@ -1,11 +1,14 @@
 ---
-layout: page
-title: 帖子存档 Archived posts
+layout: default
+title: 存档 Archive
 ---
-<ul>
-    {% for post in site.posts %}
-    <li>
-        {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{site.url}}{{post.url}}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="content">
+<div class="sppgtbl">
+{%for post in site.posts%}
+<div class="sppgrow">
+<div class="sppgcol"><div class="sppgcel postdate">{{post.date | date: "%d %b %Y"}}</div></div>
+<div class="sppgcol"><div class="sppgcel"><a href="{{site.url}}{{post.url}}">{{post.title}}</a></div></div>
+</div>
+{%endfor%}
+</div>
+</div>

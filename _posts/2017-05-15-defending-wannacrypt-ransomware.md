@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 防御 WannaCrypt 勒索软件
-date: 2017-05-15 02:34:56
+date: 2017-05-15 02:35:00 +0800
+description: 针对紧急情况，为大家提供方法，以防御 WannaCrypt 勒索软件。
+zh_only: true
 ---
 各位，隔了这么久，我终于回来了。
 
@@ -153,24 +155,24 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 2. 输入以下命令，接着回车并确认操作：
 
-    `Set-SmbServerConfiguration -EnableSMB1Protocol $false`
+        Set-SmbServerConfiguration -EnableSMB1Protocol $false
 
 3. 为确保 SMBv1 服务器端已经禁用，运行以下命令：
 
-    `Get-SmbServerConfiguration | Select EnableSMB1Protocol`
+        Get-SmbServerConfiguration | Select EnableSMB1Protocol
 
 4. 若你看到 `EnableSMB1Protocol` 为 `False`，表示上述操作成功，继续接下来的步骤。
 
 5. 运行这两个命令：
 
-    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`  
-    `sc.exe config mrxsmb10 start= disabled`
+        sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi
+        sc.exe config mrxsmb10 start= disabled
 
 6. 如果你是 Windows 8.0 用户，到这里重启 Windows，结束；否则继续操作。
 
 7. 运行以下命令：
 
-    `Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol`
+        Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
 
 8. 提示重启 Windows 时，确认操作，重启后，SMBv1 就完全禁用。
 
@@ -184,12 +186,12 @@ P/S: Windows 10 版本 1703 是在 3 月 17 日编译的，而微软在 3 月 14
 
 4. 运行这两个命令：
 
-    `sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi`  
-    `sc.exe config mrxsmb10 start= disabled`
+        sc.exe config lanmanworkstation depend= bowser/mrxsmb20/nsi
+        sc.exe config mrxsmb10 start= disabled
 
 5. 重启 Windows。
 
----
+----
 
 所以基本防范完成了，与此同时，请务必更新和升级杀毒软件及防火墙，以有效防御这个恶意软件。
 

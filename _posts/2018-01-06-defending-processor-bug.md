@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 防御 Spectre 和 Meltdown 处理器漏洞
-date: 2018-01-06 15:21:00
+date: 2018-01-06 15:21:00 +0800
+description: 最近爆出的处理器漏洞，提供各操作系统的解决方法。
+zh_only: true
 ---
 最近爆出 Spectre 和 Meltdown 处理器漏洞，基本上，大家手上的所有电脑和手机都会中招，无一幸免；但是 [Raspberry Pi 是免疫的](https://www.raspberrypi.org/blog/why-raspberry-pi-isnt-vulnerable-to-spectre-or-meltdown/)哦，啾咪。
 
@@ -191,7 +193,7 @@ Debian 和 Ubuntu 官方目前已经将两个漏洞都修复，但是：
 
 更新完成后，可以安装 `spectre-meltdown-checker` 软件包，并运行 `spectre-meltdown-checker`，确认漏洞已被修复。
 
----
+----
 
 该文章会根据改动，做出相应更新。
 
@@ -207,5 +209,5 @@ P/S: 我不代表或隶属于 Windows、Debian 或 Ubuntu 任一安全组，仅�
 * [InSpectre](https://www.grc.com/inspectre.htm)
 * [Spectre &amp; Meltdown Checker](https://github.com/speed47/spectre-meltdown-checker)
 
-版本：11    
-最后更新：04/05/2018
+版本：12<br>
+最后更新：05/12/2020

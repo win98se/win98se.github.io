@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Windows 10 强制获得功能更新推送
-date: 2020-11-18 11:06:00
+date: 2020-11-18 11:06:00 +0800
+description: 收不到功能更新？这个问题有解决方案了。
+zh_only: true
 ---
 众所周知，微软每次发布 Windows 10 的功能更新，推送都是分阶段进行。
 

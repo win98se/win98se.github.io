@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Git 和 Heroku 基本教程
-date: 2017-08-17 02:34:56
+date: 2017-08-17 02:35:00 +0800
+description: 给各位尝试在命令行中使用 Git，并利用 Heroku 来运行网络应用。
+zh_only: true
 ---
 几百万年没有发文，这网站都要发霉了。
 
