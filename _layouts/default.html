@@ -2,11 +2,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<meta property="fb:pages" content="390844540964622">
-<title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
+<meta name="robots" content="noindex">{%if page.title%}
+<meta property="og:title" content="{{page.title}}">
+{%endif%}{%if page.description%}
+<meta property="og:description" content="{{page.description}}">
+{%endif%}<title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Noto+Sans+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap");
 
 @font-face {
 	font-family: "A****** 7 Emoji";
@@ -16,7 +18,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Roboto", "Noto Sans SC", sans-serif, "A****** 7 Emoji";
+	font-family: "Roboto", sans-serif, "A****** 7 Emoji";
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -35,7 +37,7 @@ body {
 }
 
 code {
-	font-family: "Roboto Mono", "Noto Sans SC", monospace;
+	font-family: "Roboto Mono", monospace;
 	font-size: 14px;
 	text-shadow: 0 0 1px #acacac;
 }
@@ -552,7 +554,7 @@ if(navigator.userAgent.indexOf("MSIE ")!==-1||!!navigator.userAgent.match(/Tride
 				}
 			})(fonts[i]);
 		}
-	})(["Roboto", "Roboto Mono", "Noto Sans SC"], ()=>{
+	})(["Roboto", "Roboto Mono"], ()=>{
 		setTimeout(()=>{
 			document.getElementById("loaderbg").style.opacity="0";
 			setTimeout(()=>{
