@@ -7,7 +7,7 @@ title: 存档 Archive
 {%for post in site.posts%}
 <div class="sppgrow">
 <div class="sppgcol"><div class="sppgcel postdate">{{post.date | date: "%d %b %Y"}}</div></div>
-<div class="sppgcol"><div class="sppgcel"><a href="{{site.url}}{{post.url}}">{{post.title}}</a></div></div>
+<div class="sppgcol"><div class="sppgcel"><a href="{{site.url}}{{post.url}}">{{post.title}}</a>{%if post.zh_only%} (Chinese only){%endif%}</div></div>
 </div>
 {%endfor%}
 </div>
