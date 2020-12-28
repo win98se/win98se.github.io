@@ -1,12 +1,12 @@
 <html lang="zh-Hans">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<script>if(typeof ScriptEngine==="function")location="/fuckie.htm";</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">{%if page.title%}
-<meta property="og:title" content="{{page.title}}">
-{%endif%}{%if page.description%}
-<meta property="og:description" content="{{page.description}}">
-{%endif%}<title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
+<meta property="og:title" content="{{page.title}}">{%endif%}{%if page.description%}
+<meta property="og:description" content="{{page.description}}">{%endif%}
+<title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
 <style>
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap");
 
@@ -498,103 +498,97 @@ body.light .sppgcol:first-child {
 </div>
 <a id="modeButton"><span id="modeIcon">🌙</span></a>
 <script>
-if(navigator.userAgent.indexOf("MSIE ")!==-1||!!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-	document.body.innerHTML="<h2 style=\"margin: 50px\">该网站不再支持 Microsoft Internet Explorer，请改用另一个浏览器。</h2>";
-} else {
-	document.getElementById("curtyr").innerHTML="Copyright &copy; 2016－"+new Date().getFullYear()+" LCw Productions";
-
-	if(location.hostname==="localhost") {
-		window.onblur=()=>{
-			window.onfocus=()=>{
-				location.reload();
-			};
-		};
-	}
-
-	((fonts, callback)=>{
-		var loadedFonts=0;
-		for(var i=0, l=fonts.length; i<l; i++) {
-			((font)=>{
-				var node=document.createElement('span');
-				node.innerHTML='giItT1WQy@!-/#';
-				node.style.position='absolute';
-				node.style.left='-10000px';
-				node.style.top='-10000px';
-				node.style.fontSize='300px';
-				node.style.fontFamily='sans-serif';
-				node.style.fontVariant='normal';
-				node.style.fontStyle='normal';
-				node.style.fontWeight='normal';
-				node.style.letterSpacing='0';
-				document.body.appendChild(node);
-				var width=node.offsetWidth;
-				node.style.fontFamily=font;
-				var interval;
-				function checkFont() {
-					if(node&&node.offsetWidth!=width) {
-						loadedFonts++;
-						node.parentNode.removeChild(node);
-						node=null;
-					}
-					if(loadedFonts>=fonts.length) {
-						if(interval) {
-							clearInterval(interval);
-						}
-						if(loadedFonts==fonts.length) {
-							callback();
-							return true;
-						}
-					}
-				};
-				if(!checkFont()) {
-					interval=setInterval(checkFont, 50);
+document.getElementById("curtyr").innerHTML="Copyright &copy; 2016－"+new Date().getFullYear()+" LCw Productions";
+{%if site.url=="http://localhost:4000"%}
+window.onblur=()=>{
+	window.onfocus=()=>{
+		location.reload();
+	};
+};
+{%endif%}
+((fonts, callback)=>{
+	var loadedFonts=0;
+	for(var i=0, l=fonts.length; i<l; i++) {
+		((font)=>{
+			var node=document.createElement('span');
+			node.innerHTML='giItT1WQy@!-/#';
+			node.style.position='absolute';
+			node.style.left='-10000px';
+			node.style.top='-10000px';
+			node.style.fontSize='300px';
+			node.style.fontFamily='sans-serif';
+			node.style.fontVariant='normal';
+			node.style.fontStyle='normal';
+			node.style.fontWeight='normal';
+			node.style.letterSpacing='0';
+			document.body.appendChild(node);
+			var width=node.offsetWidth;
+			node.style.fontFamily=font;
+			var interval;
+			function checkFont() {
+				if(node&&node.offsetWidth!=width) {
+					loadedFonts++;
+					node.parentNode.removeChild(node);
+					node=null;
 				}
-			})(fonts[i]);
-		}
-	})(["Roboto", "Roboto Mono"], ()=>{
-		setTimeout(()=>{
-			document.getElementById("loaderbg").style.opacity="0";
-			setTimeout(()=>{
-				document.getElementById("loaderbg").style.display="none";
-			}, 600);
-		}, 200);
-	});
-
-	const colorThemeLS="colorTheme", modeIconObject=document.getElementById("modeIcon");
-	if(localStorage.getItem(colorThemeLS)===null) {
-		localStorage.setItem(colorThemeLS, +window.matchMedia("(prefers-color-scheme: light)").matches);
+				if(loadedFonts>=fonts.length) {
+					if(interval) {
+						clearInterval(interval);
+					}
+					if(loadedFonts==fonts.length) {
+						callback();
+						return true;
+					}
+				}
+			};
+			if(!checkFont()) {
+				interval=setInterval(checkFont, 50);
+			}
+		})(fonts[i]);
 	}
-	if(+localStorage.getItem(colorThemeLS)&&!document.body.classList.contains("light")) {
+})(["Roboto", "Roboto Mono"], ()=>{
+	setTimeout(()=>{
+		document.getElementById("loaderbg").style.opacity="0";
+		setTimeout(()=>{
+			document.getElementById("loaderbg").style.display="none";
+		}, 600);
+	}, 200);
+});
+
+const colorThemeLS="colorTheme", modeIconObject=document.getElementById("modeIcon");
+if(localStorage.getItem(colorThemeLS)===null) {
+	localStorage.setItem(colorThemeLS, +window.matchMedia("(prefers-color-scheme: light)").matches);
+}
+if(+localStorage.getItem(colorThemeLS)&&!document.body.classList.contains("light")) {
+	modeIconObject.innerHTML="☀️";
+	document.body.classList.add("light");
+}
+window.matchMedia("(prefers-color-scheme: light)").addListener((cs)=>{
+	if(document.body.classList.contains("light")) {
+		modeIconObject.innerHTML="🌙";
+		document.body.classList.remove("light");
+	} else if(cs.matches) {
 		modeIconObject.innerHTML="☀️";
 		document.body.classList.add("light");
 	}
-	window.matchMedia("(prefers-color-scheme: light)").addListener((cs)=>{
-		if(document.body.classList.contains("light")) {
-			modeIconObject.innerHTML="🌙";
-			document.body.classList.remove("light");
-		} else if(cs.matches) {
-			modeIconObject.innerHTML="☀️";
-			document.body.classList.add("light");
-		}
-		localStorage.setItem(colorThemeLS, +document.body.classList.contains("light"));
-	});
-	document.getElementById("modeButton").onclick=()=>{
-		if(document.body.classList.contains("light")) {
-			modeIconObject.innerHTML="🌙";
-		} else {
-			modeIconObject.innerHTML="☀️";
-		}
-		document.body.classList.toggle("light");
-		localStorage.setItem(colorThemeLS, +document.body.classList.contains("light"));
-	};
+	localStorage.setItem(colorThemeLS, +document.body.classList.contains("light"));
+});
+document.getElementById("modeButton").onclick=()=>{
+	if(document.body.classList.contains("light")) {
+		modeIconObject.innerHTML="🌙";
+	} else {
+		modeIconObject.innerHTML="☀️";
+	}
+	document.body.classList.toggle("light");
+	localStorage.setItem(colorThemeLS, +document.body.classList.contains("light"));
+};
 
-	document.querySelectorAll("video").forEach((el)=>{
-		el.controls=true;
-		el.controlsList=["nodownload"];
-		el.oncontextmenu=()=>{
-			return false;
-		};
-	});
-}
+document.querySelectorAll("video").forEach((el)=>{
+	el.controls=true;
+	el.controlsList=["nodownload"];
+	el.oncontextmenu=()=>{
+		return false;
+	};
+});
 </script>
 </html>
