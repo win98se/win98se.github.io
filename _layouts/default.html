@@ -489,14 +489,9 @@ body.light .sppgcol:first-child {
 </ul>
 </header>
 {{content}}
-{%unless page.no_footer%}
-<footer>
-<p id="curtyr"></p>
-<p>Powered by Jekyll</p>
-</footer>
-{%endunless%}
-</div>
+<footer><p id="curtyr"></p><p>Powered by Jekyll</p></footer>
 <a id="modeButton"><span id="modeIcon">🌙</span></a>
+</div>
 <script>
 document.getElementById("curtyr").innerHTML="Copyright &copy; 2016－"+new Date().getFullYear()+" LCw Productions";
 {%if site.url=="http://localhost:4000"%}
