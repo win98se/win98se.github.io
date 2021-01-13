@@ -12,8 +12,7 @@
 
 @font-face {
 	font-family: "A****** 7 Emoji";
-	src: url("https://raw.githubusercontent.com/googlefonts/noto-emoji/2d38dc415826e3f0e94544881f63acf17dccfa47/fonts/NotoColorEmoji.ttf") format("truetype");
-	unicode-range: U+2600-26FF, U+1F300-1F64F, U+1F680-1F6FF;
+	src: url("https://win98se.bitbucket.io/a7emoji/a7emoji.woff2") format("woff2");
 }
 
 * {
@@ -36,10 +35,16 @@ body {
 	padding: 0 50px;
 }
 
-code {
+code, pre {
 	font-family: "Roboto Mono", monospace;
 	font-size: 14px;
 	text-shadow: 0 0 1px #acacac;
+}
+
+blockquote {
+	border-left: 6px solid;
+	margin: 1em 0;
+	padding-left: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,32 +52,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5, h6 {
+	color: #cccccc;
 	margin: 18px 0;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 2em;
 	margin: 0;
 }
 
 h2 {
-	font-size: 34px;
+	font-size: 1.624em;
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 1.376em;
 }
 
 h4 {
-	font-size: 30px;
+	font-size: 1.248em;
 }
 
 h5 {
-	font-size: 28px;
+	font-size: 1.12em;
 }
 
 h6 {
-	font-size: 26px;
+	font-size: 1em;
 }
 
 info {
@@ -104,6 +110,18 @@ a.external:hover:after {
 	content: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22%3E%3Cpath fill=%22%23fff%22 stroke=%22%2300c0c0%22 d=%22M1.5 4.518h5.982V10.5H1.5z%22/%3E%3Cpath fill=%22%2300c0c0%22 d=%22M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z%22/%3E%3C/svg%3E");
 }
 
+a.footnote {
+	font-size: smaller;
+}
+
+a.footnote:before {
+	content: "[";
+}
+
+a.footnote:after {
+	content: "]";
+}
+
 li {
 	margin: 5px 0;
 }
@@ -124,6 +142,15 @@ hr {
 	background: #222222;
 	border: none;
 	height: 1px;
+}
+
+iframe.yt {
+	height: 477px;
+	width: 848px;
+}
+
+span.ref:hover {
+	border-bottom: 1px dotted;
 }
 
 /* loader shit begin */
@@ -255,14 +282,20 @@ header a.active {
 	padding: 60px;
 }
 
-.content img, .content video {
+.content img, .content video, .content iframe {
 	display: block;
 	margin: 0 auto;
+	max-height: 100vh;
 	max-width: 100%;
 }
 
-.content video {
-	max-height: 100vh;
+.content iframe {
+	border: 0;
+}
+
+.content .imgcaption {
+	margin-top: -0.5em;
+	text-align: center;
 }
 
 /* content end */
@@ -316,26 +349,26 @@ footer {
 	margin: 0 auto;
 }
 
-.sppgrow {
+.sppgtbl > * {
 	display: table-row;
 }
 
-.sppgcol {
+.sppgtbl > * > * {
 	display: table-cell;
 }
 
-.sppgcol:first-child .sppgcel {
+.sppgtbl > * > *:first-child > * {
 	padding-right: 10px;
 	text-align: right;
 }
 
-.sppgcol:last-child .sppgcel {
-	border-left: 2px solid #ffffff;
-	padding-left: 10px;
+.sppgtbl > * > *:last-child > * {
+	border-left: 2px solid;
 	padding-bottom: 10px;
+	padding-left: 10px;
 }
 
-.sppgrow:last-child .sppgcol:last-child .sppgcel {
+.sppgtbl > *:last-child > *:last-child > * {
 	padding-bottom: 0;
 }
 
@@ -349,6 +382,10 @@ body.light {
 
 body.light #loaderbg {
 	background: #f2f2f2;
+}
+
+body.light h2, body.light h3, body.light h4, body.light h5, body.light h6 {
+	color: #333333;
 }
 
 body.light table {
@@ -370,10 +407,6 @@ body.light .content {
 body.light .post-excerpt:hover {
 	background: #404040;
 	color: #ffffff;
-}
-
-body.light .sppgcol:first-child {
-	border-right: 2px solid #000000;
 }
 
 /* light theme shit end */
@@ -410,30 +443,6 @@ body.light .sppgcol:first-child {
 		width: 100%;
 	}
 
-	h1 {
-		font-size: 30px;
-	}
-
-	h2 {
-		font-size: 28px;
-	}
-
-	h3 {
-		font-size: 26px;
-	}
-
-	h4 {
-		font-size: 24px;
-	}
-
-	h5 {
-		font-size: 22px;
-	}
-
-	h6 {
-		font-size: 20px;
-	}
-
 	header {
 		height: auto;
 	}
@@ -456,23 +465,23 @@ body.light .sppgcol:first-child {
 		float: none;
 	}
 
-	.sppgcol {
+	.sppgtbl > * > * {
 		display: table-row;
 	}
 
-	.sppgcel {
+	.sppgtbl > * > * > * {
 		display: table-cell;
 	}
 
-	.sppgcol:first-child .sppgcel {
+	.sppgtbl > * > *:first-child > * {
 		padding-right: 0;
 		text-align: left;
 	}
 
-	.sppgcol:last-child .sppgcel {
+	.sppgtbl > * > *:last-child > * {
 		border-left: none;
-		padding-left: 0;
 		padding-bottom: 15px;
+		padding-left: 0;
 	}
 }
 
@@ -505,22 +514,22 @@ window.onblur=()=>{
 	var loadedFonts=0;
 	for(var i=0, l=fonts.length; i<l; i++) {
 		((font)=>{
-			var node=document.createElement('span');
-			node.innerHTML='giItT1WQy@!-/#';
-			node.style.position='absolute';
-			node.style.left='-10000px';
-			node.style.top='-10000px';
-			node.style.fontSize='300px';
-			node.style.fontFamily='sans-serif';
-			node.style.fontVariant='normal';
-			node.style.fontStyle='normal';
-			node.style.fontWeight='normal';
-			node.style.letterSpacing='0';
+			var node=document.createElement("span");
+			node.innerHTML="giItT1WQy@!-/#";
+			node.style.position="absolute";
+			node.style.left="-10000px";
+			node.style.top="-10000px";
+			node.style.fontSize="300px";
+			node.style.fontFamily="sans-serif";
+			node.style.fontVariant="normal";
+			node.style.fontStyle="normal";
+			node.style.fontWeight="normal";
+			node.style.letterSpacing="0";
 			document.body.appendChild(node);
 			var width=node.offsetWidth;
 			node.style.fontFamily=font;
 			var interval;
-			function checkFont() {
+			var checkFont=()=>{
 				if(node&&node.offsetWidth!=width) {
 					loadedFonts++;
 					node.parentNode.removeChild(node);
