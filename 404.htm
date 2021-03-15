@@ -1,0 +1,94 @@
+---
+permalink: /404.html
+---
+<html lang="zh-Hans">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HTTP 404 Not Found</title>
+<style>
+* {
+	box-sizing: border-box;
+	font-family: "Sarasa UI SC", "Microsoft YaHei", "SimSun", "Segoe UI", "Verdana", "Arial", sans-serif;
+}
+
+body {
+	background: #e8eaef linear-gradient(#ffffff, #fefefe 1.375%, #fdfdfd 7.5%, #fcfcfc 15%, #fcfcfe 17.625%, #fcfcfc 19%, #fbfbfb 19.25%, #fbfbfd 23.375%, #fbfbfb 24.375%, #fafcfb 24.625%, #fbfbfb 25%, #fafafa 25.25%, #fafafc 26%, #f9fafc 27%, #fafafc 28.375%, #f9f9fb 28.75%, #f8f9fb 33%, #f8f8fa 34%, #f7f8fa 35%, #f7f8fc 36%, #f7f8fa 36.125%, #f7f9f8 36.25%, #f7f9f6 36.5%, #f7f9f8 36.625%, #f7f8fa 36.875%, #f8f8fa 37.375%, #f7f7f9 37.5%, #f6f7f9 39.625%, #f6f7fb 42.25%, #f5f6fa 42.375%, #f5f6f8 43%, #f6f5fa 45%, #f5f4f9 45.625%, #f4f5f9 46.625%, #f4f5f7 47.75%, #f4f5f9 49%, #f3f4f8 50.25%, #f4f3f8 53.125%, #f4f2f7 53.875%, #f3f2f7 54%, #f2f3f7 54.625%, #f1f2f6 58%, #f0f1f5 61.875%, #eff0f4 65.25%, #f0f1f5 65.5%, #f1f2f6 65.75%, #f0f1f5 65.875%, #eff0f4 66.875%, #eeeff3 70.375%, #eeeff4 75%, #edeef3 75.875%, #edeef2 76.375%, #edeef3 79%, #ecedf2 79.875%, #eaedf2 81.75%, #ecedf1 82%, #ebecf1 86%, #e9ecf1 90%, #ebecf1 90.25%, #eaebf0 90.75%, #ebecf1 99%, #eaebf0 99.125%, #e9eaef 99.5%) 0% 0%/1px 800px repeat-x;
+	color: #575757;
+	margin: 20px;
+}
+
+#pageContainer {
+	max-width: max-content;
+}
+
+#mainTitle {
+	color: #4465a2;
+	font-size: 13.5pt;
+	font-weight: normal;
+	margin-top: 1.34em;
+}
+
+p, ul, li {
+	font-size: 10.5pt;
+	margin: 0.67em 0;
+}
+
+ul, #errorExplanation {
+	margin-bottom: 1em;
+	padding-left: 28px;
+}
+
+a, #moreInformation {
+	color: #1370ab;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid #074ae5;
+	color: #074ae5;
+	cursor: pointer;
+}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ℹ️</text></svg>">
+<div style="max-width: max-content">
+<h1 id="mainTitle">The webpage cannot be found</h1>
+<div style="border-bottom: 1px solid #b6bcc6; color: #787878; font-size: 9pt; margin-bottom: 1.34em; text-align: right">HTTP 404</div>
+<p id="likelyCauses">Most likely causes:</p>
+<ul>
+<li id="causeErrorInAddress">There might be a typing error in the address.</li>
+<li id="causeLinkOutOfDate">If you clicked on a link, it may be out of date.</li>
+</ul>
+<p id="whatToTry">What you can try:</p>
+<ul>
+<li id="retypeAddress">Retype the address.</li>
+<li><a id="goBack" onclick="history.back()">Go back to the previous page.</a></li>
+</ul>
+<p id="moreInformation">More information</p>
+<p id="errorExplanation">This error (HTTP 404 Not Found) means that your browser was able to connect to the website, but the page you wanted was not found. It is possible that the webpage is temporarily unavailable. Alternatively, the website might have changed or removed the webpage.</p>
+</div>
+<script>
+if(!String.prototype.startsWith) {
+	Object.defineProperty(String.prototype, "startsWith", {
+		value: function(search, rawPos) {
+			var pos=rawPos>0?rawPos|0:0;
+			return this.substring(pos, pos+search.length)===search;
+		}
+	});
+}
+
+var lang=(navigator.userLanguage||navigator.language).toLowerCase();
+if((lang.startsWith("zh"))&&(lang.indexOf("-tw")===-1)&&(lang.indexOf("-hk")===-1)&&(lang.indexOf("-mo")===-1)&&(lang.indexOf("-hant")===-1)) {
+	document.title="HTTP 404 未找到";
+	document.getElementById("mainTitle").innerHTML="无法找到该网页";
+	document.getElementById("likelyCauses").innerHTML="最可能的原因是：";
+	document.getElementById("causeErrorInAddress").innerHTML="在地址中可能存在键入错误。";
+	document.getElementById("causeLinkOutOfDate").innerHTML="当您点击某个链接时，它可能已过期。";
+	document.getElementById("whatToTry").innerHTML="您可以尝试以下操作：";
+	document.getElementById("retypeAddress").innerHTML="重新键入地址。";
+	document.getElementById("goBack").innerHTML="返回到上一页。";
+	document.getElementById("moreInformation").innerHTML="详细信息";
+	document.getElementById("errorExplanation").innerHTML="此错误 (HTTP 404 未找到) 意味着您的浏览器可以连接到该网站，但是找不到您想要的网页。该网页可能是暂时无法使用。或者，该网站可能已更改或删除该网页。";
+}
+</script>
