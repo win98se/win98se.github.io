@@ -6,4 +6,4 @@ document.getElementById("menu").innerHTML="<p><a href=\"index.htm\">Client produ
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_sac.htm\">Windows 10 (Semi-Annual Channel)</a></p>\
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_ltsc.htm\">Windows 10 (Long-Term Servicing Channel)</a></p>\
 ";
-document.getElementById("copy").innerHTML="Copyright &copy; 2016－"+new Date().getFullYear()+" LCw Productions";
+document.getElementById("copy").innerHTML="Copyright &copy; 2016&#65293;"+new Date().getFullYear()+" LCw Productions";
