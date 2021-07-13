@@ -314,6 +314,8 @@ footer {
 /* index begin */
 
 #recent-posts {
+	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 }
 
@@ -340,8 +342,10 @@ footer {
 }
 
 .end {
+	clear: both;
 	padding: 40px 0;
 	text-align: center;
+	width: 100%;
 }
 
 /* index end */
@@ -413,6 +417,43 @@ body.light .post-excerpt:hover {
 }
 
 /* light theme shit end */
+/* webkit-only shit begin */
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+	::-webkit-scrollbar {
+		height: 8px;
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #7f7f7f;
+		border-radius: 4px;
+		opacity: 0.6;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #6e6e6e;
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: #5f5b5b;
+		opacity: 1;
+	}
+
+	::-webkit-scrollbar-track {
+		opacity: 0;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: none;
+	}
+
+	#modeButton {
+		right: 18px;
+	}
+}
+
+/* webkit-only shit end */
 /* responsive shit begin */
 
 @media (orientation: portrait) {
@@ -505,7 +546,7 @@ body.light .post-excerpt:hover {
 <a id="modeButton"><span id="modeIcon">🌙</span></a>
 </div>
 <script>
-document.getElementById("curtyr").innerHTML="Copyright &copy; 2016－"+new Date().getFullYear()+" LCw Productions";
+document.getElementById("curtyr").innerHTML="Copyright &copy; 2016&#65293;"+new Date().getFullYear()+" LCw Productions";
 {%if site.url=="http://localhost:4000"%}
 window.onblur=()=>{
 	window.onfocus=()=>{

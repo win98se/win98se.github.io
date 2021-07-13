@@ -2,12 +2,11 @@
 layout: default
 ---
 <div class="content" id="recent-posts">
-{%for post in site.posts limit:6%}
+{%for post in site.posts limit:8%}
 <a href="{{site.url}}{{post.url}}" class="post-excerpt">
 <div class="title">{{post.title}}</div>
 <info class="postdate">{{post.date | date: "%b %Y"}}</info>{{post.description}}{%if post.zh_only%}(Chinese only){%endif%}
 </a>
 {%endfor%}
-<div class="breaker"></div>
 <div class="end"><a href="{{site.url}}/archive/">更多帖子 More posts</a></div>
 </div>
