@@ -144,10 +144,6 @@ hr {
 	height: 1px;
 }
 
-img {
-	image-rendering: -webkit-optimize-contrast;
-}
-
 iframe.yt {
 	height: 477px;
 	width: 848px;
@@ -424,6 +420,10 @@ body.light .post-excerpt:hover {
 /* webkit-only shit begin */
 
 @media (-webkit-min-device-pixel-ratio: 0) {
+	img {
+		image-rendering: -webkit-optimize-contrast;
+	}
+
 	::-webkit-scrollbar {
 		height: 10px;
 		width: 10px;
