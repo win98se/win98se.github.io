@@ -14,10 +14,12 @@ const messages={
 		"th64": "64-bit",
 		"th32": "32-bit",
 		"win10v": "Windows 10 Version $1",
+		"win11v": "Windows 11 Version $1",
 		"enu": "English US",
 		"chs": "Simplified Chinese",
 		"cht": "Traditional Chinese",
-		"chk": "Traditional Chinese Hong Kong"
+		"chk": "Traditional Chinese Hong Kong",
+		"notavail": "Not Available"
 	},
 	"zh-Hans": {
 		"title": "下载 Windows 光盘映像 (ISO 文件)",
@@ -27,10 +29,12 @@ const messages={
 		"th64": "64 位",
 		"th32": "32 位",
 		"win10v": "Windows 10 版本 $1",
+		"win11v": "Windows 11 版本 $1",
 		"enu": "英文 (美国)",
 		"chs": "简体中文",
 		"cht": "繁体中文",
-		"chk": "繁体中文 (香港)"
+		"chk": "繁体中文 (香港)",
+		"notavail": "不可用"
 	},
 	"zh-Hant": {
 		"title": "下載 Windows 光碟映像 (ISO 檔案)",
@@ -40,10 +44,12 @@ const messages={
 		"th64": "64 位元",
 		"th32": "32 位元",
 		"win10v": "Windows 10 版本 $1",
+		"win11v": "Windows 11 版本 $1",
 		"enu": "英文 (美國)",
 		"chs": "簡體中文",
 		"cht": "正體中文",
-		"chk": "繁體中文 (香港)"
+		"chk": "繁體中文 (香港)",
+		"notavail": "不可用"
 	}
 };
 
@@ -59,7 +65,10 @@ function updateText() {
 	document.querySelectorAll(".win10v").forEach((el)=>{
 		el.innerText=banana.i18n("win10v", el.id);
 	});
-	document.querySelectorAll(".enu, .chs, .cht, .chk").forEach((el)=>{
+	document.querySelectorAll(".win11v").forEach((el)=>{
+		el.innerText=banana.i18n("win11v", el.id);
+	});
+	document.querySelectorAll(".enu, .chs, .cht, .chk, .notavail").forEach((el)=>{
 		el.innerText=banana.i18n(el.className);
 	});
 }
@@ -138,6 +147,20 @@ a:hover {
 <th id="thlang"></th>
 <th id="th64"></th>
 <th id="th32"></th>
+</tr>
+<tr>
+<th class="win11v" id="21H2" rowspan="3"></th>
+<th class="enu"></th>
+<td><a href="https://tb.rg-adguard.net/dl.php?go=26f23bc1">Win11_English_x64.iso</a></td>
+<td class="notavail" rowspan="3"></td>
+</tr>
+<tr>
+<th class="chs"></th>
+<td><a href="https://tb.rg-adguard.net/dl.php?go=7d655a41">Win11_Chinese(Simplified)_x64.iso</a></td>
+</tr>
+<tr>
+<th class="cht"></th>
+<td><a href="https://tb.rg-adguard.net/dl.php?go=8e32884f">Win11_Chinese(Traditional)_x64.iso</a></td>
 </tr>
 <tr>
 <th class="win10v" id="21H1" rowspan="3"></th>
