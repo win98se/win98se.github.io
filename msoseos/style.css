@@ -1,95 +1,97 @@
-body
-{
-    background: #9DB7D2;
-    background: -webkit-linear-gradient(to left, #9DB7D2, #004E98);
-    background: linear-gradient(to left, #9DB7D2, #004E98);
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 13.5pt;
+body, table {
+	font-size: 13.5pt;
 }
-#menu
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 10px;
-    width: 314px;
-    height: 100%;
-    background: rgba(192, 192, 192, 0.2);
-    z-index: 2;
+
+body {
+	background: #9DB7D2;
+	background: -webkit-linear-gradient(to left, #9DB7D2, #004E98);
+	background: linear-gradient(to left, #9DB7D2, #004E98);
+	font-family: "Segoe UI", sans-serif;
 }
-#contents
-{
-    position: absolute;
-    top: 0;
-    left: 334px;
-    width: calc(100% - 334px);
+
+#menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 10px;
+	width: 270px;
+	height: 100%;
+	background: rgba(192, 192, 192, 0.2);
+	z-index: 2;
 }
-table
-{
-    width: calc(100% - 40px);
+
+#contents {
+	position: absolute;
+	top: 0;
+	left: 290px;
+	width: calc(100% - 290px);
 }
+
+table {
+	width: calc(100% - 40px);
+}
+
 @media screen and (min-width: 1903px) {
-    body
-    {
-        zoom: 1.25;
-    }
+	body {
+		zoom: 1.25;
+	}
 }
+
 @media screen and (min-width: 3823px) {
-    body
-    {
-        zoom: 2.5;
-    }
+	body {
+		zoom: 2.5;
+	}
 }
-td
-{
-    padding: 5px 10px;
+
+td {
+	padding: 5px 10px;
 }
-td.osname
-{
-    background-color: #808080;
-    color: #FFFFFF;
+
+td.osname {
+	background-color: #808080;
+	color: #FFFFFF;
 }
-td.title
-{
-    color: #FFFFFF;
-    width: 90px;
+
+td.title {
+	color: #FFFFFF;
+	width: 90px;
 }
-td.gadate
-{
-    background-color: #C00000;
+
+td.gadate {
+	background-color: #C00000;
 }
-td.eomsdate
-{
-    background-color: #000080;
+
+td.eomsdate {
+	background-color: #000080;
 }
-td.eoesdate
-{
-    background-color: #000000;
+
+td.eoesdate {
+	background-color: #000000;
 }
-td.date
-{
-    width: 160px;
+
+td.date {
+	width: 160px;
 }
-td.eos
-{
-    background-color: #C0C0C0;
-    text-align: center;
+
+td.eos {
+	background-color: #C0C0C0;
+	text-align: center;
 }
-p, .details
-{
-    color: #FFFFFF;
-    font-size: 11pt;
+
+p, .details {
+	color: #FFFFFF;
+	font-size: 11pt;
 }
-p a:link, p a:visited, p a:hover, p a:active
-{
-    color: #FFFFFF;
-    text-decoration: none;
+
+p a:link, p a:visited, p a:hover, p a:active {
+	color: #FFFFFF;
+	text-decoration: none;
 }
-abbr
-{
-    text-decoration: none;
+
+abbr {
+	text-decoration: none;
 }
-abbr:hover
-{
-    border-bottom: 1px dotted #FFFFFF;
+
+abbr:hover {
+	border-bottom: 1px dotted #FFFFFF;
 }
