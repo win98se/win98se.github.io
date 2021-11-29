@@ -67,7 +67,7 @@ th {
 </style>
 <select id="language" lang="zh-Hans">
 <option value="en">English</option>
-<option value="zh-Hans" selected>简体中文</option>
+<option value="zh-Hans">简体中文</option>
 <option value="zh-Hant">正體中文</option>
 </select>
 <h1 id="title"></h1>
@@ -217,7 +217,7 @@ const messages={
 	}
 };
 
-function updateText() {
+updateText=()=>{
 	const lang=document.getElementById("language").value;
 	banana.load(messages);
 	banana.setLocale(lang);
@@ -237,8 +237,21 @@ function updateText() {
 window.onload=()=>{
 	const langSelector=document.getElementById("language");
 	const langParam=new URLSearchParams(location.search).get("lang");
-	if(langParam=="en"||langParam=="zh-Hans"||langParam=="zh-Hant") {
-		langSelector.value=langParam;
+	var selectLang=langParam;
+	if(selectLang===null) {
+		var navLang=(navigator.userLanguage||navigator.language).toLowerCase();
+		if(navLang.startsWith("zh")) {
+			if((navLang.indexOf("-tw")!==-1)||(navLang.indexOf("-hk")!==-1)||(navLang.indexOf("-mo")!==-1)||(navLang.indexOf("-hant")!==-1)) {
+				selectLang="zh-Hant"
+			} else {
+				selectLang="zh-Hans"
+			}
+		} else {
+			selectLang="en"
+		}
+	}
+	if(selectLang==="en"||selectLang==="zh-Hans"||selectLang==="zh-Hant") {
+		langSelector.value=selectLang;
 	}
 	updateText();
 	langSelector.addEventListener("change", updateText);

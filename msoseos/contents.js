@@ -11,7 +11,7 @@ FormatDate=(date)=>{
 }
 
 FillPage=(pageTitle, infoTable)=>{
-	document.write("<title>"+pageTitle+"</title><link rel=\"stylesheet\" href=\"style.css\"><div id=\"menu\"><p><a href=\"index.htm\">Client products</a></p><p><a href=\"server.htm\">Server products</a></p><p>Ancient products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_9x.htm\">MS-DOS & Windows 9x</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_nt.htm\">Windows NT (except NT10)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_ltsc.htm\">NT10 (Long-Term Servicing Channel)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_gac.htm\">NT10 (General Availability Channel)</a></p></div><div id=\"contents\"><center>");
+	document.write("<title>"+pageTitle+"</title><link rel=\"stylesheet\" href=\"style.css\"><div id=\"menu\"><p><a href=\"./\">Client products</a></p><p><a href=\"server.htm\">Server products</a></p><p>Ancient products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_9x.htm\">MS-DOS & Windows 9x</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_nt.htm\">Windows NT (except NT10)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_ltsc.htm\">NT10 (Long-Term Servicing Channel)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"ancient_10_gac.htm\">NT10 (General Availability Channel)</a></p></div><div id=\"contents\"><center>");
 	if(infoTable.length>0)
 	{
 		infoTable.forEach(e=>((osName, gaDate, eomsDate, eoesDate)=>{
