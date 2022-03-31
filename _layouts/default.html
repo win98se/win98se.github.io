@@ -1,23 +1,23 @@
 <html lang="zh-Hans">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<script>if(typeof ScriptEngine==="function")location="/fuckie.htm";</script>
+<script>(typeof ScriptEngine==="function")&&(location="/fuckie.htm");</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">{%if page.title%}
 <meta property="og:title" content="{{page.title}}">{%endif%}{%if page.description%}
 <meta property="og:description" content="{{page.description}}">{%endif%}
 <title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans|Roboto+Mono&display=swap");
 
 @font-face {
-	font-family: "A****** 7 Emoji";
-	src: url("https://win98se.bitbucket.io/a7emoji/a7emoji.woff2") format("woff2");
+	font-family: "Twemoji";
+	src: url("https://win98se.bitbucket.io/emjfonts/twemoji.woff2") format("woff2");
 }
 
 * {
 	box-sizing: border-box;
-	font-family: "Roboto", sans-serif, "A****** 7 Emoji";
+	font-family: "Google Sans", sans-serif, "Twemoji";
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -214,7 +214,7 @@ span.ref:hover {
 
 #modeButton #modeIcon {
 	display: block;
-	font-family: "A****** 7 Emoji";
+	font-family: "Twemoji";
 	font-size: 19px;
 	left: 4px;
 	position: absolute;
