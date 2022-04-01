@@ -555,7 +555,11 @@ calcScrollbarWidth=()=>{
 	const pgbody=document.getElementById("pgbody");
 	pgbody.style.setProperty("--scrollbar-width", pgbody.offsetWidth-pgbody.clientWidth+"px");
 }
-document.addEventListener("DOMContentLoaded", calcScrollbarWidth);
+if(document.readyState==="loading") {
+	document.addEventListener("DOMContentLoaded", calcScrollbarWidth);
+} else {
+	calcScrollbarWidth();
+}
 window.onresize=calcScrollbarWidth;
 
 document.getElementById("curtyr").innerHTML="Copyright <span id=\"copySymbol\">&copy;</span> 2016&#65293;"+new Date().getFullYear()+" LCw Productions";
