@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh-Hans">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -8,7 +9,7 @@
 <meta property="og:description" content="{{page.description}}">{%endif%}
 <title>{%if page.title%}{{page.title}} &mdash; {%endif%}{{site.title}}</title>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Google+Sans|Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 @font-face {
 	font-family: "Twemoji";
@@ -20,6 +21,10 @@
 	font-family: "Google Sans", sans-serif, "Twemoji";
 	font-size: 18px;
 	line-height: 1.5;
+}
+
+body, .content {
+	transition: 400ms;
 }
 
 body {
@@ -36,7 +41,7 @@ body {
 }
 
 code, pre {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Roboto Mono", monospace, "Twemoji";
 	font-size: 14px;
 	text-shadow: 0 0 1px #acacac;
 }
@@ -196,7 +201,7 @@ span.ref:hover {
 	background: #004040;
 	height: 32px;
 	position: fixed;
-	right: 26px;
+	right: calc(10px + var(--scrollbar-width, 0px));
 	top: 10px;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -246,7 +251,6 @@ header a.active {
 .blog-title a {
 	display: inline-block;
 	font-size: 52px;
-	transition: 200ms;
 }
 
 .blog-title a:hover {
@@ -308,6 +312,10 @@ footer {
 	color: #646464;
 	margin: 40px 0;
 	text-align: center;
+}
+
+#copySymbol {
+	font-family: "Roboto Mono", sans-serif, "Twemoji";
 }
 
 /* footer end */
@@ -452,10 +460,6 @@ body.light .post-excerpt:hover {
 	::-webkit-scrollbar-corner {
 		background: none;
 	}
-
-	#modeButton {
-		right: 20px;
-	}
 }
 
 /* webkit-only shit end */
@@ -474,10 +478,6 @@ body.light .post-excerpt:hover {
 		height: 120px;
 		margin: -60px 0 0 -60px;
 		width: 120px;
-	}
-
-	#modeButton {
-		right: 10px;
 	}
 
 	header {
@@ -551,7 +551,10 @@ body.light .post-excerpt:hover {
 <a id="modeButton"><span id="modeIcon">🌙</span></a>
 </div>
 <script>
-document.getElementById("curtyr").innerHTML="Copyright &copy; 2016&#65293;"+new Date().getFullYear()+" LCw Productions";
+const pgbody=document.getElementById("pgbody");
+pgbody.style.setProperty("--scrollbar-width", pgbody.offsetWidth-pgbody.clientWidth+"px");
+
+document.getElementById("curtyr").innerHTML="Copyright <span id=\"copySymbol\">&copy;</span> 2016&#65293;"+new Date().getFullYear()+" LCw Productions";
 {%if site.url=="http://localhost:4000"%}
 window.onblur=()=>{
 	window.onfocus=()=>{
