@@ -31,6 +31,7 @@ body {
 	background: #000000;
 	color: #ffffff;
 	margin: 0;
+	overflow: hidden;
 	overflow: clip;
 }
 
@@ -141,6 +142,16 @@ th, td {
 	border: 2px solid #ffffff;
 	padding: 5px;
 	vertical-align: top;
+}
+
+th.min, td.min {
+    white-space: nowrap;
+    width: 1px;
+}
+
+table.ctrmid th, table.ctrmid td {
+    text-align: center;
+    vertical-align: middle;
 }
 
 hr {
@@ -536,6 +547,12 @@ body.light .post-excerpt:hover {
 
 /* responsive shit end */
 </style>
+<noscript><style>
+#loaderbg {
+	display: none;
+	opacity: 0;
+}
+</style></noscript>
 <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/6NgA/8imZf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A/+/dQP9bRYf///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP7/9WH/N5t3/+HzAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDz+Odn+9D/CP+t/2z///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP7H/1////8A/vf/Y/j/+Bn+iP9u////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD+tf+Y/+T/Mf72/wX+v/9v/Z//dP///wD///8A////AP///wD///8A/+jaAP+OGJP//v4p////AP///wD///8A9//5AO4AtK3///8W+XT/ddux33b///8A////AP///wD///8A////AP///wD///8A/+HNePPx74r///8M////AP///wD/6rZ2/6S4ev/TyS3/EeKj//r7Ef///wD///8A////AP///wD///8A////AP///wD+//4A/+L/hf4//4H84f86/+7QPf/w3jv/zaxr/8uIff+etn7/tZBz/8vjMf/19wD///8A////AP///wD///8A////AP///wD///8A/qn/cf9t53z/omaK////AP///wD///8A/+faD/9b8pz/k36H/9fBH//z7RL///8A////AP/x/w7+6/8M////AP///wD//f8A/9/lSP///wD///8A////AP///wD6jP9y9/7/AP/27wD/+/UA3HEAirZnx5n9eP9q/+f8AP90YY7/un9df4uNdPf//QD/3cE5/+fWLf///wD///8A////AN+k4X7///8A////AP+ZMmX2//4e/93/AP/E7VX/x/ZV//ntAP+8f1m/ANa7/0J0j////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP/r3RP/7uAx+NX/Jv/i8Bj///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//8AAP/3AAD/5wAA/+cAAP/jAAD/owAA/4MAAPPDAAD4wQAA/gAAAH+OAAAM7wAAcRMAALJHAAD/hwAA//8AAA==">
 <div id="loaderbg"><div id="loader"></div></div>
 <div id="pgbody">
@@ -587,22 +604,24 @@ window.onblur=()=>{
 			node.style.letterSpacing="0";
 			document.body.appendChild(node);
 			var width=node.offsetWidth;
-			node.style.fontFamily=font;
+			node.style.fontFamily="\""+font+"\", sans-serif";
 			var interval;
+			var attempts=0;
 			var checkFont=()=>{
-				if(node&&node.offsetWidth!=width) {
+				if(document.readyState==="complete") {
+					attempts++;
+				}
+				if(node&&(node.offsetWidth!=width||attempts>=100)) {
 					loadedFonts++;
+					if(interval) {
+						clearInterval(interval);
+					}
 					node.parentNode.removeChild(node);
 					node=null;
 				}
 				if(loadedFonts>=fonts.length) {
-					if(interval) {
-						clearInterval(interval);
-					}
-					if(loadedFonts==fonts.length) {
-						callback();
-						return true;
-					}
+					callback();
+					return true;
 				}
 			};
 			if(!checkFont()) {
