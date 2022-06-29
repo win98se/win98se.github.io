@@ -23,7 +23,7 @@ zh_only: true
 <td>1<br>(女主)</td>
 <td>李圣经</td>
 <td>吴寒星</td>
-<td>31[^ohbbirthday]</td>
+<td>31</td>
 <td>星范娱乐 文宣组长</td>
 <td>孔太星</td>
 <td><a href="https://instagr.am/heybiblee">heybiblee</a></td>
@@ -32,7 +32,7 @@ zh_only: true
 <td>2<br>(男主)</td>
 <td>金永大</td>
 <td>孔太星</td>
-<td>31[^gtsbirthday]</td>
+<td>31</td>
 <td>星范娱乐 经纪管理 1 组演员</td>
 <td>吴寒星</td>
 <td><a href="https://instagr.am/youngdae0302">youngdae0302</a></td>
@@ -99,14 +99,14 @@ zh_only: true
 <tr>
 <td>李承协</td>
 <td>姜时德／(艺名) 姜友星</td>
-<td>23[^ksdbirthday]</td>
+<td>23</td>
 <td>星范娱乐 经纪管理 2 组演员</td>
 <td><a href="https://instagr.am/sssn9_zzzn9">sssn9_zzzn9</a></td>
 </tr>
 <tr>
 <td>申炫承</td>
 <td>尹宰贤</td>
-<td>23[^yjhbirthday]</td>
+<td>23</td>
 <td>星范娱乐 经纪管理 1 组演员</td>
 <td>陈柔那</td>
 <td><a href="https://instagr.am/lucky_hyeons">lucky_hyeons</a></td>
@@ -154,7 +154,7 @@ zh_only: true
 
 ### 备注
 
-[^ohbbirthday]: 吴寒星的生日是 1992 年 8 月 17 日。
-[^gtsbirthday]: 孔太星的生日是 1992 年 11 月 7 日。
-[^ksdbirthday]: 姜时德的生日是 2000 年 5 月 20 日。
-[^yjhbirthday]: 尹宰贤的生日是 2000 年 6 月 12 日。
+* 吴寒星的生日是 1992 年 8 月 17 日。
+* 孔太星的生日是 1992 年 11 月 7 日。
+* 姜时德的生日是 2000 年 5 月 20 日。
+* 尹宰贤的生日是 2000 年 6 月 12 日。
