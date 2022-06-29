@@ -154,7 +154,7 @@ zh_only: true
 
 ### 备注
 
-[^ohbbirthday]：吴寒星的生日是 1992 年 8 月 17 日。
-[^gtsbirthday]：孔太星的生日是 1992 年 11 月 7 日。
-[^ksdbirthday]：姜时德的生日是 2000 年 5 月 20 日。
-[^yjhbirthday]：尹宰贤的生日是 2000 年 6 月 12 日。
+[^ohbbirthday]: 吴寒星的生日是 1992 年 8 月 17 日。
+[^gtsbirthday]: 孔太星的生日是 1992 年 11 月 7 日。
+[^ksdbirthday]: 姜时德的生日是 2000 年 5 月 20 日。
+[^yjhbirthday]: 尹宰贤的生日是 2000 年 6 月 12 日。
