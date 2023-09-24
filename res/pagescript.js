@@ -97,3 +97,51 @@ document.querySelectorAll("video").forEach((el)=>{
 		return false;
 	};
 });
+
+var tos=(()=>{
+	var isAdBlockerInstalled=()=>{
+		return !document.getElementById("iupmsegaTy7K9lnROC5QrMhI140HCG28");
+	};
+
+	var showNotification=()=>{
+		var e=document.createElement("div");
+		e.id="tos-modal-dialog";
+		var ne=document.createElement("div");
+		ne.innerHTML="我们的网站之所以能够运行，是因为您 (以及其他所有人) 屏蔽了每个网站上的广告。请考虑安装广告拦截器来支持我们。<br><a href=\"https://github.com/gorhill/uBlock#installation\" target=\"_blank\">立即免费获取</a> <a onclick=\"tos.hideNotification()\">下次再来</a>";
+		e.appendChild(ne);
+		document.body.appendChild(e);
+	};
+
+	var hideNotification=()=>{
+		document.getElementById("tos-modal-dialog").style.display="none";
+		sessionStorage&&(sessionStorage["TOSNotificationDismissed"]="1");
+	}
+
+	var run=()=>{
+		if(sessionStorage&&sessionStorage["TOSNotificationDismissed"]!=1&&!isAdBlockerInstalled()) {
+			showNotification();
+		}
+	}
+
+	// exposed interfaces
+	return {
+		isAdBlockerInstalled: isAdBlockerInstalled,
+		showNotification: showNotification,
+		hideNotification: hideNotification,
+		run: run,
+	};
+})();
+(ready=(fn)=>{
+	if(document.readyState!="loading"){
+		fn();
+	} else if(document.addEventListener) {
+		document.addEventListener("DOMContentLoaded", fn);
+	} else {
+		document.attachEvent("onreadystatechange", ()=>{
+		if(document.readyState!="loading")
+			fn();
+		});
+	}
+})(()=>{
+	tos.run();
+});

@@ -544,3 +544,40 @@ body.light .post-excerpt:hover {
 }
 
 /* responsive shit end */
+/* tos shit begin */
+
+#tos-modal-dialog {
+	background: rgba(0, 0, 0, 0.53);
+	display: grid;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 16777269;
+}
+
+#tos-modal-dialog > * {
+	background: #002dd3;
+	color: #ffffff;
+	font-weight: 600;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+#tos-modal-dialog a {
+	background: #202020;
+	border: 1px solid #ffffff;
+	color: unset;
+	display: inline-block;
+	margin: 8px 8px auto;
+	padding: 4px 12px;
+}
+
+#tos-modal-dialog a:hover {
+	background: #0060c0;
+	cursor: pointer;
+}
+
+/* tos shit end */
