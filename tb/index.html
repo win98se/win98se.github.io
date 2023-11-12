@@ -37,6 +37,7 @@ window.onload=()=>{
 			var title="Download Windows Disc Image (ISO File)";
 			var desc=`Please go to <a href=\"${redir_url}\">this page</a> to download a disc image (ISO file) that can be used to install or reinstall Windows. The image can also be used to create installation media using a USB flash drive or DVD.`;
 	}
+	document.documentElement.lang=selectLang;
 	document.getElementById("title").innerText=title;
 	document.getElementById("desc").innerHTML=desc;
 };
