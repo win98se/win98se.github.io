@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "Twemoji";
-	src: url("https://win98se.bitbucket.io/emjfonts/twemoji.woff2") format("woff2");
+	src: url("https://cdn.jsdelivr.net/npm/twemoji-colr-font/twemoji.woff2") format("woff2");
 }
 
 * {
