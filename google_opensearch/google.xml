@@ -1,9 +1,9 @@
 <opensearchdescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-	<shortname>Google</shortname>
-	<tags>Google</tags>
-	<description>Google Search</description>
-	<inputencoding>UTF-8</inputencoding>
-	<syndicationright>limited</syndicationright>
-	<image width="16" height="16" type="image/x-icon">http://www.google.com/favicon.ico</image>
-	<url type="text/html" template="http://www.google.com/search?q={searchTerms}"/>
+  <shortname>Google</shortname>
+  <tags>Google</tags>
+  <description>Google Search</description>
+  <inputencoding>UTF-8</inputencoding>
+  <syndicationright>limited</syndicationright>
+  <image width="16" height="16" type="image/x-icon">http://www.google.com/favicon.ico</image>
+  <url type="text/html" template="http://www.google.com/search?q={searchTerms}"/>
 </opensearchdescription>
