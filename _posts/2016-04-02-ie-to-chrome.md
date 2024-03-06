@@ -34,7 +34,7 @@ First, [download Google Chrome Frame (GCF)](https://dl.google.com/chrome/install
 
 不过不用紧，虽说过时，版本号也跟现时的版本 49 差很远，可是还是可以用滴，下载之后，装上去。
 
-Never mind. Although it's treated as obsolete, and the version number is quite far from the current verion 49, but we can still use it. After downloading, install it.
+Never mind. Although it's treated as obsolete, and the version number is quite far from the current version 49, but we can still use it. After downloading, install it.
 
 装完之后，浏览某些网页，就会调用 GCF 来浏览了。浏览这些网页时，HTTP 头会传发 `X-UA-Compatible: chrome=1`，这时就会自动调用 GCF 来浏览，以达到最佳化。
 
