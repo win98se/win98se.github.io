@@ -2,8 +2,10 @@
 layout: default
 title: 设置谷歌为默认搜索引擎 Set Google as the default search engine
 ---
+<link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/images/branding/product/ico/googleg_alldp.ico">
 <link rel="search" type="application/opensearchdescription+xml" title="Google" href="google.xml">
 <div class="content">
 <h1>设置谷歌为默认搜索引擎 Set Google as the default search engine</h1>
 <p>请使用支持 OpenSearch 的浏览器打开此页，以将谷歌加入搜索引擎列表，并将其设置为默认。Please open this page with a browser that supports OpenSearch to add Google to the list of search engines and set it as the default.</p>
+<input type="button" value="将谷歌添加为搜索提供商 Add Google As Search Provider" onclick="window.external.AddSearchProvider('{{site.url}}/google_opensearch/google.xml');">
 </div>
