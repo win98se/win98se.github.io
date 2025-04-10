@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第15届国会下议院第三会期开幕 国家最高元首御词 
+title: 第15届国会下议院第三会期开幕 国家最高元首御词
 date: 2024-03-06 21:03:00 +0800
 description: HM The King's speech on the Opening of the Third Session of Dewan Rakyat of 15th Parliament
 ---
