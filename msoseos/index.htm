@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<script src="contents.js"></script>
 <script>
-FillPage("End of Support page - client products", [
-	["2015-07-29", "2020-10-13", "2025-10-14", "Windows 10 Enterprise LTSB 2015<br><span class=\"details\">Build 10240</span>"],
-	["2016-08-02", "2021-10-12", "2026-10-13", "Windows 10 Enterprise LTSB 2016<br><span class=\"details\">Build 14393</span>"],
-	["2018-11-13", "2024-01-09", "2029-01-09", "Windows 10 Enterprise LTSC 2019<br><span class=\"details\">Build 17763</span>"],
-	["2021-11-16", "2027-01-12", "2032-01-13", "Windows 10 Enterprise LTSC 2021<br><span class=\"details\">Build 19044</span>"],
-	["2022-10-18", "2025-10-14", "2025-10-14", "Windows 10 Version 22H2<br><span class=\"details\">Build 19045</span>"],
-	["2022-09-20", "2024-10-08", "2025-10-14", "Windows 11 Version 22H2<br><span class=\"details\">Build 22621</span>"],
-	["2023-10-31", "2025-11-11", "2026-11-10", "Windows 11 Version 23H2<br><span class=\"details\">Build 22631</span>"],
-	["2024-10-01", "2026-10-13", "2027-10-12", "Windows 11 Version 24H2<br><span class=\"details\">Build 26100</span>"],
-	["2024-10-01", "2029-10-09", "2034-10-10", "Windows 11 Enterprise LTSC 2024<br><span class=\"details\">Build 26100</span>"],
-	["N/A", "N/A", "N/A", "Windows 11 Version 25H2"],
-]);
+import("./contents.js").then((m)=>{
+	switch(new URLSearchParams(location.search).get("page"))
+	{
+		case "ancient_9x":
+			m.FillPage("End of Support page - ancient products (MS-DOS &nbsp; Windows 9x)", ["dos_9x"], true);
+			break;
+		case "ancient_nt":
+			m.FillPage("End of Support page - ancient products (Windows NT, except Windows NT 10)", ["nt"], true);
+			break;
+		case "ancient_10_gac":
+			m.FillPage("End of Support page - ancient products (Windows NT 10, General Availability Channel)", ["10_gac"], true);
+			break;
+		case "ancient_10_ltsc":
+			m.FillPage("End of Support page - ancient products (Windows NT 10, Long-Term Servicing Channel)", ["10_ltsc"], true);
+			break;
+		case "e_xp":
+			m.FillPage("End of Support page - XP-based embedded products)", ["e_xp"], true);
+			break;
+		case "e_7":
+			m.FillPage("End of Support page - 7-based embedded products)", ["e_7"], true);
+			break;
+		case "e_80":
+			m.FillPage("End of Support page - 8.0-based embedded products)", ["e_80"], true);
+			break;
+		case "e_81":
+			m.FillPage("End of Support page - 8.1-based embedded products)", ["e_81"], true);
+			break;
+		case "server":
+			m.FillPage("End of Support page - server products", ["server"], false);
+			break;
+		case null:
+		default:
+			m.FillPage("End of Support page - client products", ["client"], false);
+	}
+	window.onblur=()=>{
+		window.onfocus=()=>{
+			location.reload();
+		}
+	};
+});
 </script>

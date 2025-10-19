@@ -14,12 +14,12 @@ window.onload=()=>{
 		var navLang=(navigator.userLanguage||navigator.language).toLowerCase();
 		if(navLang.startsWith("zh")) {
 			if((navLang.indexOf("-tw")!==-1)||(navLang.indexOf("-hk")!==-1)||(navLang.indexOf("-mo")!==-1)||(navLang.indexOf("-hant")!==-1)) {
-				selectLang="zh-Hant"
+				selectLang="zh-Hant";
 			} else {
-				selectLang="zh-Hans"
+				selectLang="zh-Hans";
 			}
 		} else {
-			selectLang="en"
+			selectLang="en";
 		}
 	}
 	const redir_url="https://massgrave.dev/genuine-installation-media.html";

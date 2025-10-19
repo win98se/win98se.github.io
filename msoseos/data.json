@@ -1,0 +1,616 @@
+{
+	"MS-DOS 6.0": {
+		"categories": ["dos_9x"],
+		"gaDate": "N/A",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 1.0": {
+		"categories": ["dos_9x"],
+		"gaDate": "N/A",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 2.0": {
+		"categories": ["dos_9x"],
+		"gaDate": "N/A",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 3.0": {
+		"categories": ["dos_9x"],
+		"gaDate": "1990-06-01",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 3.1": {
+		"categories": ["dos_9x"],
+		"gaDate": "1992-03-01",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows for Workgroups 3.1": {
+		"categories": ["dos_9x"],
+		"gaDate": "1992-10-01",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows for Workgroups 3.11": {
+		"categories": ["dos_9x"],
+		"gaDate": "1993-11-01",
+		"eomsDate": "2001-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 95": {
+		"categories": ["dos_9x"],
+		"gaDate": "1995-08-15",
+		"eomsDate": "2000-12-31",
+		"eoesDate": "2001-12-31"
+	},
+	"Windows 98": {
+		"categories": ["dos_9x"],
+		"gaDate": "1998-06-30",
+		"eomsDate": "2002-06-30",
+		"eoesDate": "2006-07-11"
+	},
+	"Windows 98 Second Edition": {
+		"categories": ["dos_9x"],
+		"gaDate": "1999-06-30",
+		"eomsDate": "2002-06-30",
+		"eoesDate": "2006-07-11"
+	},
+	"Windows Millennium Edition": {
+		"categories": ["dos_9x"],
+		"gaDate": "2000-12-31",
+		"eomsDate": "2003-12-31",
+		"eoesDate": "2006-07-11"
+	},
+	"Windows NT 3.1": {
+		"categories": ["nt", "client", "server"],
+		"gaDate": "1993-10-21",
+		"eomsDate": "2000-12-31",
+		"eoesDate": "2000-12-31",
+		"details": "Workstation &amp; Advanced Server"
+	},
+	"Windows NT 3.51 Workstation": {
+		"categories": ["nt", "client"],
+		"gaDate": "1995-05-30",
+		"eomsDate": "2000-12-31",
+		"eoesDate": "2001-12-31",
+		"title": "Windows NT 3.51",
+		"details": "Workstation"
+	},
+	"Windows NT 3.51 Server": {
+		"categories": ["nt", "server"],
+		"gaDate": "1995-08-28",
+		"eomsDate": "2000-09-30",
+		"eoesDate": "2002-09-30",
+		"title": "Windows NT 3.51",
+		"details": "Server"
+	},
+	"Windows NT 4.0 Workstation": {
+		"categories": ["nt", "client"],
+		"gaDate": "1996-07-29",
+		"eomsDate": "2002-06-30",
+		"eoesDate": "2004-06-30",
+		"title": "Windows NT 4.0",
+		"details": "Workstation"
+	},
+	"Windows NT 4.0 Server": {
+		"categories": ["nt", "server"],
+		"gaDate": "1996-07-29",
+		"eomsDate": "2002-12-31",
+		"eoesDate": "2004-12-31",
+		"title": "Windows NT 4.0",
+		"details": "Server"
+	},
+	"Windows NT 4.0 Enterprise Server": {
+		"categories": ["nt", "server"],
+		"gaDate": "1997-12-15",
+		"eomsDate": "2002-12-31",
+		"eoesDate": "2004-12-31",
+		"title": "Windows NT 4.0",
+		"details": "Enterprise Server"
+	},
+	"Windows NT 4.0 Terminal Server": {
+		"categories": ["nt", "server"],
+		"gaDate": "1998-09-13",
+		"eomsDate": "2002-12-31",
+		"eoesDate": "2004-12-31",
+		"title": "Windows NT 4.0",
+		"details": "Terminal Server"
+	},
+	"Windows NT 4.0 Embedded": {
+		"categories": ["nt", "client"],
+		"gaDate": "1999-08-30",
+		"eomsDate": "2003-06-30",
+		"eoesDate": "2006-07-11",
+		"title": "Windows NT 4.0",
+		"details": "Embedded"
+	},
+	"Windows 2000": {
+		"categories": ["nt", "client", "server"],
+		"gaDate": "2000-03-31",
+		"eomsDate": "2005-06-30",
+		"eoesDate": "2010-07-13",
+		"details": "Professional, Server &amp; Advanced Server"
+	},
+	"Windows 2000 Datacenter Server": {
+		"categories": ["nt", "server"],
+		"gaDate": "2000-11-13",
+		"eomsDate": "2005-06-30",
+		"eoesDate": "2010-07-13",
+		"title": "Windows 2000",
+		"details": "Datacenter Server"
+	},
+	"Windows XP": {
+		"categories": ["nt", "client"],
+		"gaDate": "2001-12-31",
+		"eomsDate": "2009-04-14",
+		"eoesDate": "2014-04-08",
+		"details": "View embedded products",
+		"param": "e_xp"
+	},
+	"Windows XP Professional for Embedded Systems": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2001-12-31",
+		"eomsDate": "2009-04-14",
+		"eoesDate": "2014-04-08"
+	},
+	"Windows XP Embedded": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2002-01-30",
+		"eomsDate": "2011-01-11",
+		"eoesDate": "2016-01-12"
+	},
+	"Windows Embedded for Point of Service": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2005-06-06",
+		"eomsDate": "2011-04-12",
+		"eoesDate": "2016-04-12"
+	},
+	"Windows Fundamentals for Legacy PCs": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2006-05-31",
+		"eomsDate": "2009-04-14",
+		"eoesDate": "2014-04-08"
+	},
+	"Windows Embedded Standard 2009": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2008-12-14",
+		"eomsDate": "2014-01-14",
+		"eoesDate": "2019-01-08"
+	},
+	"Windows Embedded POSReady 2009": {
+		"categories": ["e_xp", "client"],
+		"gaDate": "2009-03-10",
+		"eomsDate": "2014-04-08",
+		"eoesDate": "2019-04-09"
+	},
+	"Windows Server 2003 x86": {
+		"categories": ["nt", "server"],
+		"gaDate": "2003-05-28",
+		"eomsDate": "2010-07-13",
+		"eoesDate": "2015-07-14",
+		"title": "Windows Server 2003",
+		"details": "x86; Web, Standard, Enterprise &amp; Datacenter"
+	},
+	"Windows Server 2003 Itanium": {
+		"categories": ["nt", "server"],
+		"gaDate": "2003-06-19",
+		"eomsDate": "2010-07-13",
+		"eoesDate": "2015-07-14",
+		"title": "Windows Server 2003",
+		"details": "Itanium; Enterprise &amp; Datacenter"
+	},
+	"Windows Server 2003 x64": {
+		"categories": ["nt", "server"],
+		"gaDate": "2005-05-28",
+		"eomsDate": "2010-07-13",
+		"eoesDate": "2015-07-14",
+		"title": "Windows Server 2003",
+		"details": "x64; Standard, Enterprise &amp; Datacenter"
+	},
+	"Windows Server 2003 R2": {
+		"categories": ["nt", "server"],
+		"gaDate": "2006-03-05",
+		"eomsDate": "2010-07-13",
+		"eoesDate": "2015-07-14",
+		"details": "x86 &amp; x64; Standard, Enterprise &amp; Datacenter"
+	},
+	"Windows Vista": {
+		"categories": ["nt", "client"],
+		"gaDate": "2007-01-25",
+		"eomsDate": "2012-04-10",
+		"eoesDate": "2017-04-11"
+	},
+	"Windows Web Server 2008": {
+		"categories": ["nt", "server"],
+		"gaDate": "2008-05-06",
+		"eomsDate": "2013-07-09",
+		"eoesDate": "2018-07-10"
+	},
+	"Windows Server 2008": {
+		"categories": ["nt", "server"],
+		"gaDate": "2008-05-06",
+		"eomsDate": "2015-01-13",
+		"eoesDate": "2020-01-14",
+		"details": "Standard, Enterprise, Datacenter &amp; for Itanium-based Systems"
+	},
+	"Windows Server 2008 Foundation": {
+		"categories": ["nt", "server"],
+		"gaDate": "2009-05-21",
+		"eomsDate": "2015-01-13",
+		"eoesDate": "2020-01-14",
+		"title": "Windows Server 2008",
+		"details": "Foundation"
+	},
+	"Windows 7": {
+		"categories": ["nt", "client"],
+		"gaDate": "2009-10-22",
+		"eomsDate": "2015-01-13",
+		"eoesDate": "2020-01-14",
+		"details": "View embedded products",
+		"param": "e_7"
+	},
+	"Windows Embedded Standard 7": {
+		"categories": ["e_7", "client"],
+		"gaDate": "2010-07-29",
+		"eomsDate": "2015-10-13",
+		"eoesDate": "2020-10-13"
+	},
+	"Windows Thin PC": {
+		"categories": ["e_7", "client"],
+		"gaDate": "2011-07-01",
+		"eomsDate": "2016-10-11",
+		"eoesDate": "2021-10-12"
+	},
+	"Windows Embedded POSReady 7": {
+		"categories": ["e_7", "client"],
+		"gaDate": "2011-09-10",
+		"eomsDate": "2016-10-11",
+		"eoesDate": "2021-10-12"
+	},
+	"Windows Server 2008 R2": {
+		"categories": ["nt", "server"],
+		"gaDate": "2009-10-22",
+		"eomsDate": "2015-01-13",
+		"eoesDate": "2020-01-14",
+		"details": "Standard, Enterprise, Datacenter &amp; for Itanium-based Systems"
+	},
+	"Windows 8.0": {
+		"categories": ["nt", "client"],
+		"gaDate": "2012-10-30",
+		"eomsDate": "2016-01-12",
+		"eoesDate": "2016-01-12",
+		"details": "View embedded products",
+		"param": "e_80"
+	},
+	"Windows Embedded 8 Pro": {
+		"categories": ["e_80", "client"],
+		"gaDate": "2012-10-30",
+		"eomsDate": "2016-01-12",
+		"eoesDate": "2016-01-12"
+	},
+	"Windows Embedded 8 Standard": {
+		"categories": ["e_80", "client"],
+		"gaDate": "2013-05-01",
+		"eomsDate": "2018-07-10",
+		"eoesDate": "2023-07-11"
+	},
+	"Windows Embedded 8 Industry": {
+		"categories": ["e_80", "client"],
+		"gaDate": "2013-06-24",
+		"eomsDate": "2016-01-12",
+		"eoesDate": "2016-01-12",
+		"details": "Pro &amp; Enterprise"
+	},
+	"Windows Server 2012": {
+		"categories": ["nt", "server"],
+		"gaDate": "2012-10-30",
+		"eomsDate": "2018-10-09",
+		"eoesDate": "2023-10-10",
+		"details": "Foundation, Standard, Datacenter &amp; for Embedded Systems"
+	},
+	"Windows Server 2012 Essentials": {
+		"categories": ["nt", "server"],
+		"gaDate": "2013-01-02",
+		"eomsDate": "2018-10-09",
+		"eoesDate": "2023-10-10",
+		"title": "Windows Server 2012",
+		"details": "Essentials"
+	},
+	"Windows 8.1": {
+		"categories": ["nt", "client"],
+		"gaDate": "2013-11-13",
+		"eomsDate": "2018-01-09",
+		"eoesDate": "2023-01-10",
+		"details": "View embedded products",
+		"param": "e_81"
+	},
+	"Windows Embedded 8.1 Pro": {
+		"categories": ["e_81", "client"],
+		"gaDate": "2013-11-13",
+		"eomsDate": "2018-01-09",
+		"eoesDate": "2023-01-10"
+	},
+	"Windows Embedded 8.1 Industry": {
+		"categories": ["e_81", "client"],
+		"gaDate": "2013-11-25",
+		"eomsDate": "2018-07-10",
+		"eoesDate": "2023-07-11",
+		"details": "Pro &amp; Enterprise"
+	},
+	"Windows Server 2012 R2": {
+		"categories": ["nt", "server"],
+		"gaDate": "2013-11-25",
+		"eomsDate": "2018-10-09",
+		"eoesDate": "2023-10-10",
+		"details": "Foundation, Essentials, Standard, Datacenter &amp; for Embedded Systems"
+	},
+	"Windows 10 Version 1507": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2015-07-29",
+		"eomsDate": "2017-05-09",
+		"eoesDate": "2017-05-09",
+		"details": "Build 10240"
+	},
+	"Windows 10 Enterprise LTSB 2015": {
+		"categories": ["10_ltsc", "client"],
+		"gaDate": "2015-07-29",
+		"eomsDate": "2020-10-13",
+		"eoesDate": "2025-10-14",
+		"details": "Build 10240"
+	},
+	"Windows 10 Version 1511": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2015-11-10",
+		"eomsDate": "2017-10-10",
+		"eoesDate": "2018-04-10",
+		"details": "Build 10586"
+	},
+	"Windows 10 Version 1607": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2016-08-02",
+		"eomsDate": "2018-04-10",
+		"eoesDate": "2019-04-09",
+		"details": "Build 14393"
+	},
+	"Windows 10 Enterprise LTSB 2016": {
+		"categories": ["10_ltsc", "client"],
+		"gaDate": "2016-08-02",
+		"eomsDate": "2021-10-12",
+		"eoesDate": "2026-10-13",
+		"details": "Build 14393"
+	},
+	"Windows 10 Version 1703": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2017-04-05",
+		"eomsDate": "2018-10-09",
+		"eoesDate": "2019-10-08",
+		"details": "Build 15063"
+	},
+	"Windows 10 Version 1709": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2017-10-17",
+		"eomsDate": "2019-04-09",
+		"eoesDate": "2020-10-13",
+		"details": "Build 16299"
+	},
+	"Windows 10 Version 1803": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2018-04-30",
+		"eomsDate": "2019-11-12",
+		"eoesDate": "2021-05-11",
+		"details": "Build 17134"
+	},
+	"Windows 10 Version 1809": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2018-11-13",
+		"eomsDate": "2020-11-10",
+		"eoesDate": "2021-05-11",
+		"details": "Build 17763"
+	},
+	"Windows 10 Enterprise LTSC 2019": {
+		"categories": ["10_ltsc", "client"],
+		"gaDate": "2018-11-13",
+		"eomsDate": "2024-01-09",
+		"eoesDate": "2029-01-09",
+		"details": "Build 17763"
+	},
+	"Windows 10 Version 1903": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2019-05-21",
+		"eomsDate": "2020-12-08",
+		"eoesDate": "2020-12-08",
+		"details": "Build 18362"
+	},
+	"Windows 10 Version 1909": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2019-11-12",
+		"eomsDate": "2021-05-11",
+		"eoesDate": "2022-05-10",
+		"details": "Build 18363"
+	},
+	"Windows 10 Version 2004": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2020-05-27",
+		"eomsDate": "2021-12-14",
+		"eoesDate": "2021-12-14",
+		"details": "Build 19041"
+	},
+	"Windows 10 Version 20H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2020-10-20",
+		"eomsDate": "2022-05-10",
+		"eoesDate": "2023-05-09",
+		"details": "Build 19042"
+	},
+	"Windows 10 Version 21H1": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2021-05-18",
+		"eomsDate": "2022-12-13",
+		"eoesDate": "2022-12-13",
+		"details": "Build 19043"
+	},
+	"Windows 10 Version 21H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2021-11-16",
+		"eomsDate": "2023-06-13",
+		"eoesDate": "2024-06-11",
+		"details": "Build 19044"
+	},
+	"Windows 10 Enterprise LTSC 2021": {
+		"categories": ["10_ltsc", "client"],
+		"gaDate": "2021-11-16",
+		"eomsDate": "2027-01-12",
+		"eoesDate": "2032-01-13",
+		"details": "Build 19044"
+	},
+	"Windows 10 Version 22H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2022-10-18",
+		"eomsDate": "2025-10-14",
+		"eoesDate": "2025-10-14",
+		"details": "Build 19045"
+	},
+	"Windows Server 2016": {
+		"categories": ["10_ltsc", "server"],
+		"gaDate": "2016-10-15",
+		"eomsDate": "2022-01-11",
+		"eoesDate": "2027-01-12",
+		"details": "Build 14393; Essentials, Standard &amp; Datacenter"
+	},
+	"Windows Server 2016 (Nano Server)": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2016-10-15",
+		"eomsDate": "2018-10-09",
+		"eoesDate": "2018-10-09",
+		"details": "Build 14393; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 1709": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2017-10-17",
+		"eomsDate": "2019-04-09",
+		"eoesDate": "2019-04-09",
+		"details": "Build 16299; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 1803": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2018-04-30",
+		"eomsDate": "2019-11-12",
+		"eoesDate": "2019-11-12",
+		"details": "Build 17134; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 1809": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2018-11-13",
+		"eomsDate": "2020-11-10",
+		"eoesDate": "2020-11-10",
+		"details": "Build 17763; Standard &amp; Datacenter"
+	},
+	"Windows Server 2019": {
+		"categories": ["10_ltsc", "server"],
+		"gaDate": "2018-11-13",
+		"eomsDate": "2024-01-09",
+		"eoesDate": "2029-01-09",
+		"details": "Build 17763; Essentials, Standard &amp; Datacenter"
+	},
+	"Windows Server Version 1903": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2019-05-21",
+		"eomsDate": "2020-12-08",
+		"eoesDate": "2020-12-08",
+		"details": "Build 18362; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 1909": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2019-11-12",
+		"eomsDate": "2021-05-11",
+		"eoesDate": "2021-05-11",
+		"details": "Build 18363; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 2004": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2020-05-27",
+		"eomsDate": "2021-12-14",
+		"eoesDate": "2021-12-14",
+		"details": "Build 19041; Standard &amp; Datacenter"
+	},
+	"Windows Server Version 20H2": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2020-10-20",
+		"eomsDate": "2022-08-09",
+		"eoesDate": "2022-08-09",
+		"details": "Build 19042; Standard &amp; Datacenter"
+	},
+	"Windows Server 2022": {
+		"categories": ["10_ltsc", "server"],
+		"gaDate": "2021-08-18",
+		"eomsDate": "2026-10-13",
+		"eoesDate": "2031-10-14",
+		"details": "Build 20348; Essentials, Standard, Datacenter &amp; Datacenter: Azure Edition"
+	},
+	"Windows 11 Version 21H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2021-10-04",
+		"eomsDate": "2023-10-10",
+		"eoesDate": "2024-10-08",
+		"details": "Build 22000"
+	},
+	"Windows 11 Version 22H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2022-09-20",
+		"eomsDate": "2024-10-08",
+		"eoesDate": "2025-10-14",
+		"details": "Build 22621"
+	},
+	"Windows 11 Version 23H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2023-10-31",
+		"eomsDate": "2025-11-11",
+		"eoesDate": "2026-11-10",
+		"details": "Build 22631"
+	},
+	"Windows Server Version 23H2": {
+		"categories": ["10_gac", "server"],
+		"gaDate": "2023-10-24",
+		"eomsDate": "2025-04-24",
+		"eoesDate": "2025-10-24",
+		"details": "Build 25398; Datacenter"
+	},
+	"Windows 11 Version 24H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2024-10-01",
+		"eomsDate": "2026-10-13",
+		"eoesDate": "2027-10-12",
+		"details": "Build 26100"
+	},
+	"Windows 11 Enterprise LTSC 2024": {
+		"categories": ["10_ltsc", "client"],
+		"gaDate": "2024-10-01",
+		"eomsDate": "2029-10-09",
+		"eoesDate": "2034-10-10",
+		"details": "Build 26100"
+	},
+	"Windows Server 2025": {
+		"categories": ["10_ltsc", "server"],
+		"gaDate": "2024-11-01",
+		"eomsDate": "2029-10-09",
+		"eoesDate": "2034-10-10",
+		"details": "Build 26100; Essentials, Standard, Datacenter &amp; Datacenter: Azure Edition"
+	},
+	"Windows 11 Version 25H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2025-09-30",
+		"eomsDate": "2027-10-12",
+		"eoesDate": "2028-10-10",
+		"details": "Build 26200"
+	},
+	"Windows 11 Version 26H2": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "N/A",
+		"eomsDate": "N/A",
+		"eoesDate": "N/A"
+	}
+}
