@@ -1,0 +1,31 @@
+body {
+	color: #333;
+}
+header {
+	background: #258dc8;
+	padding: 2px;
+	margin-bottom: 1em;
+}
+header h1 {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+header h1, .lead {
+	padding: 0 10%;
+}
+select {
+	width: 128px;
+}
+#result {
+	padding: 1em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	background: #f8ffe8;
+}
+body, .lead {
+	margin: auto;
+}
+body, select, input[type="button"] {
+	font-size: 1em;
+}

@@ -12,13 +12,22 @@ const FormatDate=(date)=>{
 		return date;
 }
 
+export const GetCurrentDate=()=>{
+	let now=new Date();
+	return Math.floor(new Date(now-now.getTimezoneOffset()*60000).getTime()/86400000);
+}
+
+const GetEOSDays=(date)=>{
+	return Math.floor(new Date(date).getTime()/86400000)-GetCurrentDate();
+}
+
 export const FillPage=(pageTitle, categories, alreadyEOS)=>{
-	document.write("<title>"+pageTitle+"</title><link rel=\"stylesheet\" href=\"style.css\"><div id=\"menu\"><p><a href=\"?\">Client products</a></p><p><a href=\"?page=server\">Server products</a></p><p>Ancient products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_9x\">MS-DOS & Windows 9x</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_nt\">Windows NT (except NT10)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_10_ltsc\">NT10 (Long-Term Servicing Channel)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_10_gac\">NT10 (General Availability Channel)</a></p></div><div id=\"contents\"><center>");
+	document.write("<title>"+pageTitle+"</title><link rel=\"stylesheet\" href=\"style.css\"><div id=\"menu\"><p><a href=\".\">Client products</a></p><p><a href=\"?page=server\">Server products</a></p><p>Ancient products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_9x\">MS-DOS & Windows 9x</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_nt\">Windows NT (except NT10)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_10_ltsc\">NT10 (Long-Term Servicing Channel)</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"?page=ancient_10_gac\">NT10 (General Availability Channel)</a></p></div><div id=\"contents\"><center>");
 	const infoTable=Object.entries(data).filter(([name, details])=>{
 		let now=new Date();
-		const isEOS=details.eoesDate&&details.eoesDate<new Date(now-now.getTimezoneOffset()*60000).toISOString().split('T')[0];
+		const isEOS=details.eoesDate&&GetEOSDays(details.eoesDate)<0;
 		const eosMatch=alreadyEOS?isEOS:!isEOS;
-		const categoryMatch=!Array.isArray(categories)||categories.length===0?true:categories.every(cat=>details.categories.includes(cat));
+		const categoryMatch=!Array.isArray(categories)||categories.length===0?true:categories.every((cat)=>details.categories.includes(cat));
 		return eosMatch&&categoryMatch;
 	}).map(([name, details])=>({
 		name,
@@ -32,12 +41,11 @@ export const FillPage=(pageTitle, categories, alreadyEOS)=>{
 	}));
 	if(infoTable.length>0)
 	{
-		infoTable.forEach(e=>{
+		infoTable.forEach((e)=>{
 			document.write("<br><table bgcolor=\"#FFFFFF\" border=\"3\" cellspacing=\"0\"><tr><td class=\"osname\" rowspan=\"2\">"+(e.title||e.name)+(e.details?"<br><"+(e.param?"a href=\"?page="+e.param+"\"":"span")+" class=\"details\">"+e.details+"</"+(e.param?"a":"span")+">":"")+"</td><td class=\"title gadate\"><abbr title=\"General availability\">GA</abbr> date</td><td class=\"date\" colspan=\"3\">"+FormatDate(e.gaDate)+"</td></tr><tr><td class=\"title eomsdate\"><abbr title=\"End of mainstream support\">EOMS</abbr> date</td><td class=\"date\">"+FormatDate(e.eomsDate)+"</td><td class=\"title eoesdate\"><abbr title=\"End of extended support\">EOES</abbr> date</td><td class=\"date\">"+FormatDate(e.eoesDate)+"</td></tr><tr><td class=\"eos\" colspan=\"5\">"+((date)=>{
 				if(regex.test(date))
 				{
-					let now=new Date();
-					let eosDays=Math.floor(new Date(date).getTime()/86400000)-Math.floor(new Date(now-now.getTimezoneOffset()*60000).getTime()/86400000);
+					let eosDays=GetEOSDays(date);
 					if(eosDays>0)
 						return "<font color=\"green\" size=\"7\">"+eosDays+"</font> day"+(eosDays===1?"":"s")+" to end of support";
 					else if(eosDays===0)

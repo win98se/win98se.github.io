@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <script>
 import("./contents.js").then((m)=>{
+	let visit=m.GetCurrentDate();
 	switch(new URLSearchParams(location.search).get("page"))
 	{
 		case "ancient_9x":
@@ -36,7 +37,8 @@ import("./contents.js").then((m)=>{
 	}
 	window.onblur=()=>{
 		window.onfocus=()=>{
-			location.reload();
+			if(m.GetCurrentDate()-visit>0)
+				location.reload();
 		}
 	};
 });
