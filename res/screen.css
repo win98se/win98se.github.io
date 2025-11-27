@@ -581,3 +581,13 @@ body.light .post-excerpt:hover {
 }
 
 /* tos shit end */
+/* reduced motion shit begin */
+
+@media (prefers-reduced-motion) {
+	#loaderbg {
+		display: none;
+		opacity: 0;
+	}
+}
+
+/* reduced motion shit end */
