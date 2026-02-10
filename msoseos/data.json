@@ -607,6 +607,13 @@
 		"eoesDate": "2028-10-10",
 		"details": "Build 26200"
 	},
+	"Windows 11 Version 26H1": {
+		"categories": ["10_gac", "client"],
+		"gaDate": "2026-02-10",
+		"eomsDate": "2028-03-14",
+		"eoesDate": "2029-03-13",
+		"details": "Build 28000"
+	},
 	"Windows 11 Version 26H2": {
 		"categories": ["10_gac", "client"],
 		"gaDate": "N/A",
