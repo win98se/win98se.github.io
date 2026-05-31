@@ -10,6 +10,7 @@
 	font-family: "Google Sans", sans-serif, "Twemoji";
 	font-size: 18px;
 	line-height: 1.5;
+	text-autospace: normal;
 }
 
 body, .content {
