@@ -1,5 +1,5 @@
 {
-	"origins": ["https://win98se.tk", "https://win98se.github.io"],
+	"origins": ["https://win98se.net", "https://win98se.github.io"],
 	"originsRegex": ["http://localhost:[0-9]+"],
 	"defaultCommentOrder": "newest"
 }

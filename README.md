@@ -1,4 +1,4 @@
-# [win98se.github.io](https://win98se.github.io) / [win98se.tk](https://win98se.tk)
+# [win98se.github.io](https://win98se.github.io) / [win98se.net](https://win98se.net)
 
 This is [Lim Chunwei](https://github.com/win98se)'s personal GitHub Pages site and blog. The site started as a showcase for software projects but now features broader content, including technical articles and general topics.
 
